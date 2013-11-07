@@ -9,9 +9,12 @@ public class Restriction {
 
     Field restrictedField;
 
-    Restriction(Field field, String constraint){
-        String[] arr = constraint.split(" ");
-
+    public Restriction(Field restrictedField, String s) {
+        this.restrictedField = restrictedField;
+        String[] arr = s.split(" ");
     }
 
+    public boolean allows(Object key) {
+        return true;
+    }
 }

@@ -1,11 +1,10 @@
 import java.util.HashMap;
+import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
  * User: jeffreymeyerson
  * Date: 11/2/13
  * Time: 10:18 AM
- * To change this template use File | Settings | File Templates.
  */
 public class Entity {
 
@@ -17,9 +16,16 @@ public class Entity {
     public Entity(String[] atts) {
         this.entityID = entityCount++;
         attributes = new HashMap<Field, Object>();
-        for(int i = 0; i < Database.columns.length; i++){
-            attributes.put(Field.getFieldForString(Database.columns[i]), atts[i]);
+        for(int i = 0; i < DataStore.columns.length; i++){
+            Field field = Field.getFieldForString(DataStore.columns[i]);
+            Object o = CSVFormatter.cleanEntry(field, atts[i]);
+            attributes.put(field, o);
         }
+    }
+
+    public Entity(int entityID, HashMap<Field, Object> attCopy) {
+        this.entityID = entityID;
+        this.attributes = attCopy;
     }
 
     public Object getAttribute(Field field) {
@@ -27,7 +33,19 @@ public class Entity {
     }
 
     public String toString(){
-        return "Entity " + entityID;
+        return "entity_" + entityID;
+    }
+
+    /**
+     * @return a version of the Entity with sensitive fields removed.
+     */
+    public Entity censoredCopy(){
+        HashMap<Field, Object> attCopy = new HashMap<Field, Object>();
+        for(Map.Entry<Field, Object> e : attributes.entrySet())
+            if(!Field.isSensitive(e.getKey()))
+                attCopy.put(e.getKey(), e.getValue());
+        return new Entity(entityID, attCopy);
+
     }
 
 }

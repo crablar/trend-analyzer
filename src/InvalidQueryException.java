@@ -14,8 +14,12 @@ public class InvalidQueryException extends Exception {
         this.reason = reason;
     }
 
-    public static InvalidQueryException similarityException() {
+    public static InvalidQueryException tooSimilar() {
         return new InvalidQueryException("Similarity threshold between this entity's nonsensitive information and corresponding nonsensitive information of an anonymized in-memory entity has been reached.");
+    }
+
+    public static InvalidQueryException nonexistentField(String nef){
+        return new InvalidQueryException("Nonexistent field: " + nef);
     }
 
 }

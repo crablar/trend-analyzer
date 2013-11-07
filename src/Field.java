@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
 
 /**
  * User: jeffreymeyerson
@@ -9,6 +6,10 @@ import java.util.Set;
  * Time: 10:20 AM
  */
 public class Field {
+
+    public enum FieldType{
+        ID,TIME,CAT,CAT_SENSITIVE,CONT,CONT_SENSITIVE;
+    }
 
     static HashMap<Field, FieldType> fieldsToTypes = new HashMap<Field, FieldType>();
     static HashMap<String, Field> stringsToFields = new HashMap<String, Field>();
@@ -29,10 +30,6 @@ public class Field {
        return fieldsToTypes.get(field).equals(FieldType.CAT_SENSITIVE) || fieldsToTypes.get(field).equals(FieldType.CONT_SENSITIVE);
     }
 
-    public enum FieldType{
-        ID,TIME,CAT,CAT_SENSITIVE,CONT,CONT_SENSITIVE;
-    };
-
     public static Field getFieldForString(String s){
         return stringsToFields.get(s);
     }
@@ -41,9 +38,8 @@ public class Field {
         return name + " : " + fieldType;
     }
 
-    public static Field[] getAllFields(){
-        Set<Field> a = fieldsToTypes.keySet();
-        return (Field[])Arrays.asList(a).toArray();
+    public static ArrayList<Field> getAllFields(){
+        return new ArrayList<Field>(fieldsToTypes.keySet());
     }
 
 }
