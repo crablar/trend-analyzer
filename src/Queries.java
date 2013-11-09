@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,33 +24,51 @@ loadEntity "Provider Number=01001"
  */
 public class Queries {
 
-    public static Query simpleQuery(String queryString) throws InvalidQueryException{
+    public static Query simpleQuery(String queryString) throws InvalidQueryException {
         Query q = new Query();
         q.selectedField = getSelectedField(queryString);
         q.restriction = getRestriction(q.selectedField, queryString);
         return q;
     }
 
-    private static Field getSelectedField(String queryString){
-        Matcher m = Pattern.compile("(.*?)").matcher(queryString);
-        return m.find() ? Field.getFieldForString(m.group(1)) : null;
+    private static Field getSelectedField(String queryString) {
+        String[] qArr = queryString.split(" ");
+        String fieldString = "";
+        for (int i = 0; i < qArr.length; i++) {
+            if (!Configuration.queryOperands.contains(qArr[i])) {
+                fieldString += qArr[i] + " ";
+            } else {
+                fieldString = fieldString.substring(0, fieldString.length() - 1);
+                break;
+            }
+        }
+        return Field.getFieldForString(fieldString);
     }
 
-    private static Restriction getRestriction(Field select, String query) throws InvalidQueryException{
-        Scanner scan = new Scanner(query);
-        StringBuilder str = new StringBuilder("");
-        scan.next("where ");
-        while(scan.hasNext())
-            str.append(scan.next());
-        return new Restriction(select,str.toString());
+    private static Restriction getRestriction(Field select, String queryString) throws InvalidQueryException {
+        String operand = null;
+        String rhs = "";
+        String[] qArr = queryString.split(" ");
+        for (int i = 0; i < qArr.length; i++) {
+            if (Configuration.queryOperands.contains(qArr[i])) {
+                if (operand != null) {
+                    throw new InvalidQueryException("Multiple operands in a single query");
+                }
+                operand = qArr[i];
+            } else if (operand != null) {
+                rhs += qArr[i] + " ";
+            }
+        }
+
+        return new Restriction(select, operand, rhs.substring(0, rhs.length() - 1));
     }
 
 
     boolean isAcceptablyPrivate(Query q) {
-        if(Session.hasIDInformation)
-            return Field.isSensitive(q.selectedField);
-        if(Session.hasSensitiveInformation)
-            return Field.isID(q.selectedField);
+        if (Session.hasIDInformation)
+            return q.selectedField.isSensitive();
+        if (Session.hasSensitiveInformation)
+            return q.selectedField.isID();
         return true;
     }
 }

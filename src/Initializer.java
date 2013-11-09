@@ -8,14 +8,15 @@ import java.util.Scanner;
  */
 public class Initializer {
 
-    static void init(String path, int numLines) throws Exception{
-        Scanner s = new Scanner(new File(path));
+    static void init(String configFilePath) throws Exception{
+        Configuration.configure(configFilePath);
+        Scanner s = new Scanner(new File(Configuration.CSVFilePath));
         String line = s.nextLine();
         DataStore.columns = line.split(",");
         line = s.nextLine();
         String[] columnTypes = line.split(",");
         DataStore.initialize(columnTypes);
-        for(int i = 0; i < numLines; i++){
+        for(int i = 0; i < Configuration.numLinesToRead; i++){
             line = s.nextLine();
             if(line.endsWith(","))
                 line += ",";

@@ -17,29 +17,33 @@ public class Field {
     String name;
     FieldType fieldType;
 
+    public static Field getFieldForString(String s){
+        return stringsToFields.get(s);
+    }
+
+    public static ArrayList<Field> getAllFields(){
+        return new ArrayList<Field>(fieldsToTypes.keySet());
+    }
+
     public Field(String fieldName, FieldType fieldType) {
         this.name = fieldName;
         this.fieldType = fieldType;
     }
 
-    public static boolean isID(Field field) {
-        return fieldsToTypes.get(field) == FieldType.ID;
+    public boolean isID() {
+        return this.fieldType == FieldType.ID;
     }
 
-    public static boolean isSensitive(Field field){
-       return fieldsToTypes.get(field).equals(FieldType.CAT_SENSITIVE) || fieldsToTypes.get(field).equals(FieldType.CONT_SENSITIVE);
+    public boolean isCont(){
+        return this.fieldType == FieldType.CONT || this.fieldType == FieldType.CONT_SENSITIVE;
     }
 
-    public static Field getFieldForString(String s){
-        return stringsToFields.get(s);
+    public boolean isSensitive(){
+        return this.fieldType == FieldType.CAT_SENSITIVE || this.fieldType == FieldType.CONT_SENSITIVE;
     }
 
     public String toString(){
-        return name + " : " + fieldType;
-    }
-
-    public static ArrayList<Field> getAllFields(){
-        return new ArrayList<Field>(fieldsToTypes.keySet());
+        return name + " (" + fieldType + ")";
     }
 
 }

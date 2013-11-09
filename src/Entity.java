@@ -42,10 +42,9 @@ public class Entity {
     public Entity censoredCopy(){
         HashMap<Field, Object> attCopy = new HashMap<Field, Object>();
         for(Map.Entry<Field, Object> e : attributes.entrySet())
-            if(!Field.isSensitive(e.getKey()))
+            if(!e.getKey().isSensitive())
                 attCopy.put(e.getKey(), e.getValue());
         return new Entity(entityID, attCopy);
-
     }
 
 }

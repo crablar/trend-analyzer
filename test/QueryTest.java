@@ -13,13 +13,13 @@ public class QueryTest {
 
     @org.junit.Before
     public void setUp() throws Exception {
-        Initializer.init("src/Quora_SampleData/hospital.csv", 10);
+        Initializer.init("src/config/hospital");
         logger = new Logger();
     }
 
     @Test
     public void testQuery() throws Exception{
-        Query query = Queries.simpleQuery("Hospital Name = University of Alabama Hospital");
+        Query query = Queries.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
         List<Entity> results = DataStore.getResults(query);
         logger.out(results.toString());
     }

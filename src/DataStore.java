@@ -45,10 +45,13 @@ public class DataStore {
     public static List<Entity> getResults(Query query) {
         ArrayList<Entity> result = new ArrayList<>();
         Map<Object, Entity> lookup = lookUps.get(query.selectedField);
-        lookup.entrySet();
-        for(Map.Entry<Object, Entity> e : lookup.entrySet())
-            if(query.restriction.allows(e.getKey()))
+        for(Map.Entry<Object, Entity> e : lookup.entrySet()){
+            Object key = e.getKey();
+            Object rhs = query.restriction.rhs;
+            if(query.restriction.allows(e.getKey())){
                 result.add(e.getValue());
+            }
+        }
         return result;
     }
 
