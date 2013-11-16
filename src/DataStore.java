@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * User: jeffreymeyerson
@@ -11,9 +8,15 @@ import java.util.Map;
 public class DataStore {
 
     static String[] columns = null;
-    static HashMap<Field, HashMap<Object, Entity>> lookUps = new HashMap<Field, HashMap<Object, Entity>>();
+    static HashMap<Field, HashMap<Object, List<Entity>>> lookUps = new HashMap<>();
 
-    static Entity getEntity(Field field, Object key){
+    /**
+     * Get all entities whose field matches the key.
+     * @param field
+     * @param key
+     * @return
+     */
+    static List<Entity> getEntities(Field field, Object key){
         return lookUps.get(field).get(key);
     }
 
@@ -23,13 +26,19 @@ public class DataStore {
             Field field = new Field(columns[i], fieldType);
             Field.fieldsToTypes.put(field, fieldType);
             Field.stringsToFields.put(columns[i], field);
-            lookUps.put(field, new HashMap<Object, Entity>());
+            lookUps.put(field, new HashMap<Object, List<Entity>>());
         }
     }
 
     static void addEntity(Entity entity) {
         for(Field field : Field.getAllFields()){
-            lookUps.get(field).put(entity.getAttribute(field), entity);
+            Map<Object,List<Entity>> lookup = lookUps.get(field);
+            List matches = lookup.get(entity.getAttribute(field));
+            if(matches == null){
+                matches = new ArrayList(1);
+            }
+            matches.add(entity);
+            lookup.put(entity.getAttribute(field), matches);
         }
     }
 
@@ -42,12 +51,12 @@ public class DataStore {
         System.out.println("Maps in database " + i);
     }
 
-    public static List<Entity> getResults(Query query) {
-        ArrayList<Entity> result = new ArrayList<>();
-        Map<Object, Entity> lookup = lookUps.get(query.selectedField);
-        for(Map.Entry<Object, Entity> e : lookup.entrySet()){
+    public static Set<Entity> getResults(Query query) {
+        Set<Entity> result = new HashSet<>();
+        Map<Object, List<Entity>> lookup = lookUps.get(query.selectedField);
+        for(Map.Entry<Object, List<Entity>> e : lookup.entrySet()){
             if(query.restriction.allows(e.getKey())){
-                result.add(e.getValue());
+                result.addAll(e.getValue());
             }
         }
         return result;

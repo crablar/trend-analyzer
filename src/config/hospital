@@ -1,3 +1,4 @@
 CSVFilePath:src/Quora_SampleData/hospital.csv
+numLinesToRead:30
 queryOperands:<,>,=
 k-anonymity:3

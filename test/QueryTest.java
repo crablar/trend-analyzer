@@ -1,7 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /**
  * User: jeffreymeyerson
@@ -23,22 +25,34 @@ public class QueryTest {
     @Test
     public void testCat1() throws Exception{
         Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
-        List<Entity> results = DataStore.getResults(query);
-        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
+        Set<Entity> results = DataStore.getResults(query);
+        List lResults = Arrays.asList(results.toArray());
+        //logger.out(Utilities.formatGridToString(Utilities.toStringGrid(lResults)));
+    }
+
+    @Test
+    public void testCat2() throws Exception{
+        Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
+        Set<Entity> results = DataStore.getResults(query);
+        List lResults = Arrays.asList(results.toArray());
+        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(lResults)));
     }
 
     @Test
     public void testCont1() throws Exception{
         Query query = QueryUtil.simpleQuery("Survey Response Rate Percent > 50");
-        List<Entity> results = DataStore.getResults(query);
-        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
+        Set<Entity> results = DataStore.getResults(query);
+        List lResults = Arrays.asList(results.toArray());
+        //logger.out(Utilities.formatGridToString(Utilities.toStringGrid(lResults)));
     }
 
     @Test
     public void testCont2() throws Exception{
         Query query = QueryUtil.simpleQuery("Percent of patients who reported that their nurses Usually communicated well. > 0");
-        List<Entity> results = DataStore.getResults(query);
-        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
+        Set<Entity> results = DataStore.getResults(query);
+        List lResults = Arrays.asList(results.toArray());
+        //logger.out(Utilities.formatGridToString(Utilities.toStringGrid(lResults)));
     }
+
 
 }

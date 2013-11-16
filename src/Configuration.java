@@ -10,7 +10,7 @@ import java.util.*;
 public class Configuration {
 
     public static Set<String> queryOperands = new HashSet<>();
-    public static int numLinesToRead = 30;
+    public static int numLinesToRead;
     public static String CSVFilePath;
 
     private static Map<String, String> setupMap = new HashMap<String, String>();
@@ -21,9 +21,14 @@ public class Configuration {
             String[] lineArr = scanner.next().split(":");
             setupMap.put(lineArr[0], lineArr[1]);
         }
+        setLinesToRead();
         setQueryOperands();
         setCSVFilePath();
 
+    }
+
+    private static void setLinesToRead() {
+        numLinesToRead = Integer.parseInt(setupMap.get("numLinesToRead"));
     }
 
     private static void setQueryOperands(){
