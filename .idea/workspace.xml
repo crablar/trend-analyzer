@@ -2,50 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c0019-956a-40c0-a14f-469739c6cef5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/hospital" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Database.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Entity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Field$FieldType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Field.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Loader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Runner.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Configurator.java" afterPath="$PROJECT_DIR$/src/Configuration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AnonymityVerifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ResultEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utilities.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Queries.java" afterPath="$PROJECT_DIR$/src/QueryUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CSVFormatter.java" afterPath="$PROJECT_DIR$/src/CSVFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Configuration.java" afterPath="$PROJECT_DIR$/src/Configuration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStore.java" afterPath="$PROJECT_DIR$/src/DataStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity.java" afterPath="$PROJECT_DIR$/src/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Field.java" afterPath="$PROJECT_DIR$/src/Field.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Initializer.java" afterPath="$PROJECT_DIR$/src/Initializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Queries.java" afterPath="$PROJECT_DIR$/src/Queries.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logger.java" afterPath="$PROJECT_DIR$/src/Logger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/QueryTest.java" afterPath="$PROJECT_DIR$/test/QueryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Restriction.java" afterPath="$PROJECT_DIR$/src/Restriction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/hospital" afterPath="$PROJECT_DIR$/src/config/hospital" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output.log" afterPath="$PROJECT_DIR$/src/output.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Runner.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383522780820" ignored="false" />
-    <file path="/a.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383404859804" ignored="false" />
+    <file path="/a.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384621691961" ignored="false" />
     <file path="/sample.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383403902131" ignored="false" />
     <file path="/Reader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383411127731" ignored="false" />
     <file path="/EntityMap.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383410626053" ignored="false" />
     <file path="/Entity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384010630027" ignored="false" />
-    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384007806102" ignored="false" />
+    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384136178801" ignored="false" />
     <file path="/Database.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383614930604" ignored="false" />
     <file path="/fragment.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383502730563" ignored="false" />
     <file path="/Loader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383615050997" ignored="false" />
     <file path="/Query.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383700634175" ignored="false" />
     <file path="/InvalidQueryException.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383445444172" ignored="false" />
-    <file path="/Restriction.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384014489596" ignored="false" />
-    <file path="/Dummy.txt" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383705729271" ignored="false" />
-    <file path="/QueryTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383701173491" ignored="false" />
+    <file path="/Restriction.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384026051939" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384619384837" ignored="false" />
+    <file path="/QueryTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384221287650" ignored="false" />
     <file path="/Formatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383519929888" ignored="false" />
     <file path="/Configurator.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962651330" ignored="false" />
     <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383698854733" ignored="false" />
-    <file path="/CSVFormatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383699435100" ignored="false" />
-    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383700018370" ignored="false" />
-    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384015523340" ignored="false" />
+    <file path="/CSVFormatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384025602218" ignored="false" />
+    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384621835595" ignored="false" />
+    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384621979951" ignored="false" />
     <file path="/Queries.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384016396269" ignored="false" />
     <file path="/Initializer.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962726824" ignored="false" />
-    <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384003384687" ignored="false" />
+    <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384622156784" ignored="false" />
     <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962218463" ignored="false" />
+    <file path="/Utilities.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384621095113" ignored="false" />
+    <file path="/ResultEntity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384134234270" ignored="false" />
+    <file path="/AnonymityVerifier.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384622341853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -96,9 +97,38 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/test/QueryTest.java" line="22" class="QueryTest" package="">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/test/QueryTest.java" line="17" class="QueryTest" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/QueryTest.java" line="38" class="QueryTest" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/test/QueryTest.java" line="32" class="QueryTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -123,19 +153,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Restriction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Restriction.java">
+      <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queries.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Queries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="77" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,38 +165,10 @@
       <file leaf-file-name="DataStore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+            <state line="27" column="5" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#382#398#0" expanded="true" />
+                <element signature="e#302#334#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Initializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hospital.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Quora_SampleData/hospital.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="72" selection-start="6070" selection-end="6070" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -183,16 +176,70 @@
       <file leaf-file-name="hospital" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/hospital">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AnonymityVerifier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AnonymityVerifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryUtil.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/QueryUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4859335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Query.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Query.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="23" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/output.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/QueryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="98" selection-start="573" selection-end="573" vertical-scroll-proportion="0.7383721">
+            <state line="41" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="5" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -216,29 +263,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Session.java" />
-        <option value="$PROJECT_DIR$/src/QueryFactory.java" />
-        <option value="$PROJECT_DIR$/src/Query.java" />
-        <option value="$PROJECT_DIR$/src/Log.java" />
-        <option value="$PROJECT_DIR$/src/Logger.java" />
-        <option value="$PROJECT_DIR$/src/Configurator.java" />
         <option value="$PROJECT_DIR$/src/Config.java" />
         <option value="$PROJECT_DIR$/src/Initializer.java" />
         <option value="$PROJECT_DIR$/src/Entity.java" />
-        <option value="$PROJECT_DIR$/src/config/hospital" />
-        <option value="$PROJECT_DIR$/src/Field.java" />
+        <option value="$PROJECT_DIR$/src/CSVFormatter.java" />
         <option value="$PROJECT_DIR$/src/Restriction.java" />
-        <option value="$PROJECT_DIR$/src/DataStore.java" />
-        <option value="$PROJECT_DIR$/test/QueryTest.java" />
         <option value="$PROJECT_DIR$/src/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/ResultEntity.java" />
+        <option value="$PROJECT_DIR$/src/Field.java" />
+        <option value="$PROJECT_DIR$/test/QueryTest.java" />
+        <option value="$PROJECT_DIR$/src/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/Logger.java" />
+        <option value="$PROJECT_DIR$/src/DataStore.java" />
+        <option value="$PROJECT_DIR$/src/config/hospital" />
+        <option value="$PROJECT_DIR$/src/AnonymityVerifier.java" />
         <option value="$PROJECT_DIR$/src/Queries.java" />
+        <option value="$PROJECT_DIR$/src/QueryUtil.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
     <option name="y" value="22" />
-    <option name="width" value="1256" />
+    <option name="width" value="1276" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -274,7 +320,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -289,7 +335,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,45 +382,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quora_SampleData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,7 +394,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="editor.preferences.completion" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -395,9 +405,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="gradle.tool.window.active" value="Tasks" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -460,19 +470,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -498,6 +495,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -591,27 +601,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1256" height="778" extended-state="6" />
+    <frame x="0" y="22" width="1276" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.6703125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19593497" sideWeight="0.6793313" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29483283" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20081301" sideWeight="0.67173254" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19504133" sideWeight="0.60030395" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1487805" sideWeight="0.67173254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32826748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -682,117 +692,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ResultEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Restriction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="504" selection-end="504" vertical-scroll-proportion="-4.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="489" selection-end="489" vertical-scroll-proportion="0.51724136">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-7.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.3343465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="420" selection-end="420" vertical-scroll-proportion="0.3586626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/hospital">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Quora_SampleData/hospital.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="6070" selection-end="6070" vertical-scroll-proportion="0.0">
+        <state line="32" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Initializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Configuration.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#398#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.47021943" />
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/Quora_SampleData/hospital.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="376" selection-end="570" vertical-scroll-proportion="0.4531722">
+        <state line="13" column="92" selection-start="6090" selection-end="6090" vertical-scroll-proportion="0.515873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="788" selection-end="788" vertical-scroll-proportion="0.68277943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Queries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="77" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
+        <state line="35" column="5" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/QueryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="98" selection-start="573" selection-end="573" vertical-scroll-proportion="0.7383721">
+        <state line="41" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="16" selection-start="3730" selection-end="3730" vertical-scroll-proportion="0.33248082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="5" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#302#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/hospital">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnonymityVerifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QueryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4859335">
           <folding />
         </state>
       </provider>

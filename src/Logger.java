@@ -1,5 +1,4 @@
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 
 /**
  * User: jeffreymeyerson
@@ -8,14 +7,18 @@ import java.io.PrintWriter;
  */
 public class Logger {
 
-    PrintWriter printWriter;
+    Writer writer;
 
-    public Logger() throws FileNotFoundException {
-        printWriter = new PrintWriter("output.log");
+    public Logger() throws IOException {
+        File f = new File ("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/output.log");
+        FileWriter fw = new FileWriter(f.getAbsoluteFile());
+        writer = new BufferedWriter(fw);
     }
 
-    public void out(String msg){
-        printWriter.write(msg);
+    public void out(String msg) throws IOException {
+        System.out.println(msg);
+        writer.write(msg);
+        writer.close();
     }
 
 }

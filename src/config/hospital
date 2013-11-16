@@ -1,2 +1,3 @@
 CSVFilePath:src/Quora_SampleData/hospital.csv
 queryOperands:<,>,=
+k-anonymity:3

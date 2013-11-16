@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class DataStore {
 
-    static String[] columns;
+    static String[] columns = null;
     static HashMap<Field, HashMap<Object, Entity>> lookUps = new HashMap<Field, HashMap<Object, Entity>>();
 
     static Entity getEntity(Field field, Object key){
@@ -46,8 +46,6 @@ public class DataStore {
         ArrayList<Entity> result = new ArrayList<>();
         Map<Object, Entity> lookup = lookUps.get(query.selectedField);
         for(Map.Entry<Object, Entity> e : lookup.entrySet()){
-            Object key = e.getKey();
-            Object rhs = query.restriction.rhs;
             if(query.restriction.allows(e.getKey())){
                 result.add(e.getValue());
             }

@@ -1,9 +1,7 @@
 /**
- * Created with IntelliJ IDEA.
  * User: jeffreymeyerson
  * Date: 11/2/13
  * Time: 4:54 PM
- * To change this template use File | Settings | File Templates.
  */
 public class Restriction {
 
@@ -31,17 +29,25 @@ public class Restriction {
         if(field.isID()){
             return rhs.equals(lhs);
         }
-        if(field.isCont()){
-            switch(operand){
-                case("<"): return (Double)lhs < (Double)rhs;
-                case(">"): return (Double)lhs > (Double)rhs;
-                case("="): return lhs.equals(rhs);
-                default: return true;
+        try{
+            if(field.isCont()){
+                switch(operand){
+                    case("<"):
+                        return (Double)lhs < (Double)rhs;
+                    case(">"):
+                        return (Double)lhs > (Double)rhs;
+                    case("="):
+                        return lhs.equals(rhs);
+                    default:
+                        return false;
+                }
+            }
+            else{
+                return lhs.equals(rhs);
             }
         }
-        else{
-                return lhs.equals(rhs);
+        catch(ClassCastException e){
+            return false;
         }
-
     }
 }

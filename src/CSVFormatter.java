@@ -27,8 +27,13 @@ public class CSVFormatter {
         }
     }
 
-    private static Object formatCont(String att) throws IllegalFormatException{
-        return att;
+    private static Object formatCont(String att){
+        try{
+            return Double.parseDouble(att.replace("%", ""));
+        }
+        catch(NumberFormatException e){
+            return "INVALID FORMAT";
+        }
     }
 
     private static Object formatTime(String att) throws IllegalFormatException {

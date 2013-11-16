@@ -22,7 +22,7 @@ loadEntity "Provider Number=01001"
     <loads all nonsensitive info about that entity, unless similarity threshold is exceeded>
 
  */
-public class Queries {
+public class QueryUtil {
 
     public static Query simpleQuery(String queryString) throws InvalidQueryException {
         Query q = new Query();

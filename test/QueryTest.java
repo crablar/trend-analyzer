@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
@@ -11,17 +12,33 @@ public class QueryTest {
 
     Logger logger;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
-        Initializer.init("src/config/hospital");
+        if(DataStore.columns == null){
+            Initializer.init("src/config/hospital");
+        }
         logger = new Logger();
     }
 
     @Test
-    public void testQuery() throws Exception{
-        Query query = Queries.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
+    public void testCat1() throws Exception{
+        Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
         List<Entity> results = DataStore.getResults(query);
-        logger.out(results.toString());
+        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
+    }
+
+    @Test
+    public void testCont1() throws Exception{
+        Query query = QueryUtil.simpleQuery("Survey Response Rate Percent > 50");
+        List<Entity> results = DataStore.getResults(query);
+        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
+    }
+
+    @Test
+    public void testCont2() throws Exception{
+        Query query = QueryUtil.simpleQuery("Percent of patients who reported that their nurses Usually communicated well. > 0");
+        List<Entity> results = DataStore.getResults(query);
+        logger.out(Utilities.formatGridToString(Utilities.toStringGrid(results)));
     }
 
 }
