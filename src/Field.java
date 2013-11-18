@@ -26,7 +26,7 @@ public class Field {
     }
 
     public Field(String fieldName, FieldType fieldType) {
-        this.name = fieldName;
+        this.name = fieldName.toUpperCase();
         this.fieldType = fieldType;
     }
 

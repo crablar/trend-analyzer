@@ -12,6 +12,7 @@ public class Configuration {
     public static Set<String> queryOperands = new HashSet<>();
     public static int numLinesToRead;
     public static String CSVFilePath;
+    public static String configName;
 
     private static Map<String, String> setupMap = new HashMap<String, String>();
 
@@ -21,10 +22,14 @@ public class Configuration {
             String[] lineArr = scanner.next().split(":");
             setupMap.put(lineArr[0], lineArr[1]);
         }
+        setConfigName();
         setLinesToRead();
         setQueryOperands();
         setCSVFilePath();
+    }
 
+    private static void setConfigName(){
+        configName = setupMap.get("configName");
     }
 
     private static void setLinesToRead() {

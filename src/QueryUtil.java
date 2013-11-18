@@ -31,18 +31,24 @@ public class QueryUtil {
         return q;
     }
 
-    private static Field getSelectedField(String queryString) {
-        String[] qArr = queryString.split(" ");
-        String fieldString = "";
-        for (int i = 0; i < qArr.length; i++) {
-            if (!Configuration.queryOperands.contains(qArr[i])) {
-                fieldString += qArr[i] + " ";
-            } else {
-                fieldString = fieldString.substring(0, fieldString.length() - 1);
-                break;
+    private static Field getSelectedField(String queryString) throws InvalidQueryException {
+        try{
+            String[] qArr = queryString.split(" ");
+            String fieldString = "";
+            for (int i = 0; i < qArr.length; i++) {
+                if (!Configuration.queryOperands.contains(qArr[i])) {
+                    fieldString += qArr[i] + " ";
+                }
+                else {
+                    fieldString = fieldString.substring(0, fieldString.length() - 1);
+                    break;
+                }
             }
+            return Field.getFieldForString(fieldString);
         }
-        return Field.getFieldForString(fieldString);
+        catch(Exception e){
+            throw new InvalidQueryException(e.getMessage());
+        }
     }
 
     private static Restriction getRestriction(Field select, String queryString) throws InvalidQueryException {
@@ -59,7 +65,6 @@ public class QueryUtil {
                 rhs += qArr[i] + " ";
             }
         }
-
         return new Restriction(select, operand, rhs.substring(0, rhs.length() - 1));
     }
 

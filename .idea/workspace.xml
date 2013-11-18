@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c0019-956a-40c0-a14f-469739c6cef5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/AirSamplingTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample_data/airsampling.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/output.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/output.log" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Quora_SampleData/hospital.csv" afterPath="$PROJECT_DIR$/src/sample_data/hospital.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/QueryTest.java" afterPath="$PROJECT_DIR$/test/HospitalTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Configuration.java" afterPath="$PROJECT_DIR$/src/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataStore.java" afterPath="$PROJECT_DIR$/src/DataStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/QueryTest.java" afterPath="$PROJECT_DIR$/test/QueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Field.java" afterPath="$PROJECT_DIR$/src/Field.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logger.java" afterPath="$PROJECT_DIR$/src/Logger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QueryUtil.java" afterPath="$PROJECT_DIR$/src/QueryUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Restriction.java" afterPath="$PROJECT_DIR$/src/Restriction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Session.java" afterPath="$PROJECT_DIR$/src/Session.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/hospital" afterPath="$PROJECT_DIR$/src/config/hospital" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output.log" afterPath="$PROJECT_DIR$/src/output.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendAnalyzer.iws" />
@@ -17,28 +26,30 @@
     <file path="/Reader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383411127731" ignored="false" />
     <file path="/EntityMap.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383410626053" ignored="false" />
     <file path="/Entity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384625742056" ignored="false" />
-    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384136178801" ignored="false" />
+    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384709633469" ignored="false" />
     <file path="/Database.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383614930604" ignored="false" />
     <file path="/fragment.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383502730563" ignored="false" />
     <file path="/Loader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383615050997" ignored="false" />
     <file path="/Query.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383700634175" ignored="false" />
     <file path="/InvalidQueryException.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383445444172" ignored="false" />
-    <file path="/Restriction.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384026051939" ignored="false" />
+    <file path="/Restriction.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384704550038" ignored="false" />
     <file path="/Dummy.txt" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384619384837" ignored="false" />
-    <file path="/QueryTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384624912768" ignored="false" />
+    <file path="/QueryTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384633942479" ignored="false" />
     <file path="/Formatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383519929888" ignored="false" />
     <file path="/Configurator.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962651330" ignored="false" />
-    <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383698854733" ignored="false" />
+    <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384705071917" ignored="false" />
     <file path="/CSVFormatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384025602218" ignored="false" />
-    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384625586669" ignored="false" />
-    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384624537666" ignored="false" />
+    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384702928532" ignored="false" />
+    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384710048039" ignored="false" />
     <file path="/Queries.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384016396269" ignored="false" />
     <file path="/Initializer.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962726824" ignored="false" />
-    <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384625928451" ignored="false" />
-    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384625986796" ignored="false" />
+    <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384703401393" ignored="false" />
+    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384703373069" ignored="false" />
     <file path="/Utilities.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384621095113" ignored="false" />
     <file path="/ResultEntity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384134234270" ignored="false" />
     <file path="/AnonymityVerifier.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384622341853" ignored="false" />
+    <file path="/HospitalTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384702348957" ignored="false" />
+    <file path="/QueryUtil.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384703839566" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +102,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Utilities.java" line="28" class="Utilities" package="">
+      <breakpoint url="file://$PROJECT_DIR$/test/HospitalTest.java" line="47" class="HospitalTest" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -106,7 +117,97 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Utilities.java" line="34" class="Utilities" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Restriction.java" line="12" class="Restriction" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QueryUtil.java" line="67" class="QueryUtil" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Initializer.java" line="23" class="Initializer" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QueryUtil.java" line="55" class="QueryUtil" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QueryUtil.java" line="35" class="QueryUtil" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QueryUtil.java" line="46" class="QueryUtil" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/DataStore.java" line="24" class="DataStore" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -130,98 +231,117 @@
     <favorites_list name="TrendAnalyzer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Restriction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Restriction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Field.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataStore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataStore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Logger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Initializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="87" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/QueryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9" selection-start="599" selection-end="599" vertical-scroll-proportion="0.4219949">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hospital" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/hospital">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="127" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.51957977">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Field.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hospital.csv" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/sample_data/hospital.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataStore.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/DataStore.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="96" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HospitalTest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/HospitalTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="58" column="10" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="output.csv" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/output.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Initializer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hospital" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/hospital">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Session.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Session.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="21" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="QueryUtil.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/QueryUtil.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="46" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Entity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="output.csv" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/output.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -239,22 +359,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Config.java" />
-        <option value="$PROJECT_DIR$/src/Initializer.java" />
-        <option value="$PROJECT_DIR$/src/CSVFormatter.java" />
-        <option value="$PROJECT_DIR$/src/Restriction.java" />
-        <option value="$PROJECT_DIR$/src/ResultEntity.java" />
-        <option value="$PROJECT_DIR$/src/Field.java" />
         <option value="$PROJECT_DIR$/src/Utilities.java" />
         <option value="$PROJECT_DIR$/src/AnonymityVerifier.java" />
         <option value="$PROJECT_DIR$/src/Queries.java" />
-        <option value="$PROJECT_DIR$/src/QueryUtil.java" />
-        <option value="$PROJECT_DIR$/src/DataStore.java" />
-        <option value="$PROJECT_DIR$/test/QueryTest.java" />
-        <option value="$PROJECT_DIR$/src/Logger.java" />
-        <option value="$PROJECT_DIR$/src/config/hospital" />
-        <option value="$PROJECT_DIR$/src/Configuration.java" />
         <option value="$PROJECT_DIR$/src/Entity.java" />
+        <option value="$PROJECT_DIR$/test/QueryTest.java" />
+        <option value="$PROJECT_DIR$/src/Quora_SampleData/sample_data/airsampling.csv" />
+        <option value="$PROJECT_DIR$/src/Logger.java" />
+        <option value="$PROJECT_DIR$/src/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/config/hospital" />
+        <option value="$PROJECT_DIR$/src/QueryUtil.java" />
+        <option value="$PROJECT_DIR$/src/Restriction.java" />
+        <option value="$PROJECT_DIR$/src/Session.java" />
+        <option value="$PROJECT_DIR$/src/output.csv" />
+        <option value="$PROJECT_DIR$/src/Field.java" />
+        <option value="$PROJECT_DIR$/src/DataStore.java" />
+        <option value="$PROJECT_DIR$/test/HospitalTest.java" />
       </list>
     </option>
   </component>
@@ -372,7 +492,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Quora_SampleData" />
+              <option name="myItemId" value="sample_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,30 +542,32 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Quora_SampleData" />
+      <recent name="$PROJECT_DIR$/src/Quora_SampleData/sample_data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.QueryTest">
-    <configuration default="false" name="QueryTest" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.HospitalTest">
+    <configuration default="false" name="HospitalTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="TrendAnalyzer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueryTest" />
+      <option name="MAIN_CLASS_NAME" value="HospitalTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -458,6 +580,28 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Session" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Session" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TrendAnalyzer" />
+      <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
@@ -572,13 +716,15 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.QueryTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HospitalTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Session" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.QueryTest" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HospitalTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Session" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -621,7 +767,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.337386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19593497" sideWeight="0.6793313" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -704,114 +850,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Restriction.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="504" selection-end="504" vertical-scroll-proportion="-4.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-7.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="-4.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/output.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/QueryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+        <state line="570" column="16" selection-start="23478" selection-end="23478" vertical-scroll-proportion="0.33239436">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Initializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/hospital">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="127" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+        <state line="23" column="63" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="87" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+        <state line="31" column="48" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1901" column="18" selection-start="75216" selection-end="75216" vertical-scroll-proportion="0.33239436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Restriction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CSVFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QueryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="599" selection-end="599" vertical-scroll-proportion="0.4219949">
+        <state line="20" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/hospital">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/HospitalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="10" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="96" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample_data/hospital.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

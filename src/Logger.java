@@ -8,17 +8,19 @@ import java.io.*;
 public class Logger {
 
     Writer writer;
+    final static File file = new File ("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/output.csv");
 
     public Logger() throws IOException {
-        File f = new File ("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/output.log");
-        FileWriter fw = new FileWriter(f.getAbsoluteFile());
+        FileWriter fw = new FileWriter(file.getAbsoluteFile());
         writer = new BufferedWriter(fw);
     }
 
     public void out(String msg) throws IOException {
-        System.out.println(msg);
         writer.write(msg);
-        writer.close();
+        writer.flush();
     }
 
+    public void clearLog() throws IOException {
+        writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+    }
 }

@@ -9,7 +9,7 @@ public class Restriction {
     String operand;
     Object rhs;
 
-    public Restriction(Field field, String operand, String rhs) {
+    public Restriction(Field field, String operand, String rhs) throws InvalidQueryException{
         this.field = field;
         this.operand = operand;
         if(field.isCont()){
@@ -17,10 +17,10 @@ public class Restriction {
                 this.rhs = Double.parseDouble(rhs);
             }
             catch (NumberFormatException e){
-                e.printStackTrace();
+                throw new InvalidQueryException(e.getMessage());
             }
         }
-        if(field.isID()){
+        else {
             this.rhs = rhs.toUpperCase();
         }
     }

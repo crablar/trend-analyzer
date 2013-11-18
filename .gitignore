@@ -1,4 +1,4 @@
 *.class
 *.iml
 out
-Quora_SampleData/*
+sample_data/*
