@@ -17,6 +17,8 @@ public class Session {
     static Scanner in = new Scanner(System.in);
     static boolean finished = false;
     static Logger logger;
+    static List lResults;
+    static Results results;
 
     public static void main(String[] args) throws Exception {
         Initializer.init("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/config/hospital");
@@ -27,7 +29,6 @@ public class Session {
         logger = new Logger();
         System.out.println("Welcome to TrendAnalyzer. Browsing database: " + Configuration.configName);
         while(!finished){
-            logger.clearLog();
             System.out.print("Enter query: ");
             String input = in.nextLine().toUpperCase();
             Query query;
@@ -37,10 +38,19 @@ public class Session {
                 System.out.println("Invalid query. Try again.");
                 continue;
             }
-            Set<Entity> results = DataStore.getResults(query);
-            List lResults = Arrays.asList(results.toArray());
+
+            //lResults = Arrays.asList(results.toArray());
+            logger.clearLog();
             logger.out(Utilities.formatGridToString(Utilities.toStringGrid(lResults)));
         }
+    }
+
+    private void doCommands(String input){
+        switch(input){
+            case("CLEAR"):
+
+        }
+
     }
 
 }

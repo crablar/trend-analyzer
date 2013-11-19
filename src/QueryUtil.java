@@ -53,20 +53,25 @@ public class QueryUtil {
     }
 
     private static Restriction getRestriction(Field select, String queryString) throws InvalidQueryException {
-        String operand = null;
-        String rhs = "";
-        String[] qArr = queryString.split(" ");
-        for (int i = 0; i < qArr.length; i++) {
-            if (Configuration.queryOperands.contains(qArr[i])) {
-                if (operand != null) {
-                    throw new InvalidQueryException("Multiple operands in a single query");
+        try{
+            String operand = null;
+            String rhs = "";
+            String[] qArr = queryString.split(" ");
+            for (int i = 0; i < qArr.length; i++) {
+                if (Configuration.queryOperands.contains(qArr[i])) {
+                    if (operand != null) {
+                        throw new InvalidQueryException("Multiple operands in a single query");
+                    }
+                    operand = qArr[i];
+                } else if (operand != null) {
+                    rhs += qArr[i] + " ";
                 }
-                operand = qArr[i];
-            } else if (operand != null) {
-                rhs += qArr[i] + " ";
             }
+            return new Restriction(select, operand, rhs.substring(0, rhs.length() - 1));
         }
-        return new Restriction(select, operand, rhs.substring(0, rhs.length() - 1));
+        catch(Exception e){
+            throw new InvalidQueryException(e);
+        }
     }
 
 
