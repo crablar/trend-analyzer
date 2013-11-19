@@ -11,7 +11,7 @@ public class Initializer {
     static void init(String configFilePath) throws Exception{
         Configuration.configure(configFilePath);
         Scanner s = new Scanner(new File(Configuration.CSVFilePath));
-        String line = s.nextLine();
+        String line = s.nextLine().toUpperCase();
         DataStore.columns = line.split(",");
         line = s.nextLine();
         String[] columnTypes = line.split(",");

@@ -23,9 +23,9 @@ public class DataStore {
     static void initialize(String[] columnTypes) {
         for(int i = 0; i < columns.length; i++){
             Field.FieldType fieldType = Field.FieldType.valueOf(columnTypes[i].replace("/", "_"));
-            Field field = new Field(columns[i], fieldType);
+            Field field = new Field(columns[i].toUpperCase(), fieldType);
             Field.fieldsToTypes.put(field, fieldType);
-            Field.stringsToFields.put(columns[i], field);
+            Field.stringsToFields.put(columns[i].toUpperCase(), field);
             lookUps.put(field, new HashMap<Object, List<Entity>>());
         }
     }
@@ -63,4 +63,3 @@ public class DataStore {
     }
 
 }
-

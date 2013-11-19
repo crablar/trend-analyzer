@@ -25,6 +25,7 @@ loadEntity "Provider Number=01001"
 public class QueryUtil {
 
     public static Query simpleQuery(String queryString) throws InvalidQueryException {
+        queryString = queryString.toUpperCase();
         Query q = new Query();
         q.selectedField = getSelectedField(queryString);
         q.restriction = getRestriction(q.selectedField, queryString);

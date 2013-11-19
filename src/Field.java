@@ -43,7 +43,7 @@ public class Field {
     }
 
     public String toString(){
-        return name + " (" + fieldType + ")";
+        return name;
     }
 
 }

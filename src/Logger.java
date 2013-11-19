@@ -11,13 +11,17 @@ public class Logger {
     final static File file = new File ("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/output.csv");
 
     public Logger() throws IOException {
+        if (!file.exists()) {
+            file.createNewFile();
+        }
         FileWriter fw = new FileWriter(file.getAbsoluteFile());
         writer = new BufferedWriter(fw);
     }
 
     public void out(String msg) throws IOException {
         writer.write(msg);
-        writer.flush();
+        System.out.println(msg);
+        writer.close();
     }
 
     public void clearLog() throws IOException {
