@@ -3,7 +3,6 @@
  * User: jeffreymeyerson
  * Date: 11/2/13
  * Time: 2:22 PM
- * To change this template use File | Settings | File Templates.
  */
 public class InvalidQueryException extends Exception {
 

@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /**
  * User: jeffreymeyerson
@@ -35,4 +37,14 @@ public class Utilities {
         return result.toString();
     }
 
+    public static void printAllFields() {
+        for(Field f : Field.getAllFields())
+            System.out.println(f.toString());
+    }
+
+    public static void printCommandDescriptions() {
+        System.out.println(
+            "'CLEAR' removes the results of the current session.\n" +
+            "'LIST' displays all available fields you can query on.");
+    }
 }

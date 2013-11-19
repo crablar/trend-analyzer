@@ -24,8 +24,8 @@ public class DataStore {
         allEntities.addEntity(entity);
     }
 
-    public static Results getResults(Query query) {
-        Set<Entity> resultSet = new HashSet<>();
+    public static Results getResults(Query query) throws InvalidQueryException{
+        List<Entity> resultSet = new ArrayList<>();
         Map<Object, List<Entity>> lookup = allEntities.getFieldMappings(query.selectedField);
         for(Map.Entry<Object, List<Entity>> e : lookup.entrySet()){
             if(query.restriction.allows(e.getKey())){
