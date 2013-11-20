@@ -1,4 +1,5 @@
 *.class
 *.iml
+*.swp
 out
 sample_data/*
