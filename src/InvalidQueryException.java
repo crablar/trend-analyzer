@@ -17,6 +17,10 @@ public class InvalidQueryException extends Exception {
          reason = "Invalid query: " + e.toString();
     }
 
+    public InvalidQueryException() {
+        reason = "Bad input.";
+    }
+
     public static InvalidQueryException tooSimilar() {
         return new InvalidQueryException("Similarity threshold between this entity's nonsensitive information and corresponding nonsensitive information of an anonymized in-memory entity has been reached.");
     }

@@ -1,5 +1,6 @@
 configName:hospital
-CSVFilePath:src/sample_data/hospital.csv
+CSVFilePath:/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/sample_data/hospital.csv
 numLinesToRead:30
-queryOperands:<,>,=
+queryOperands:<,>,=,!=
 k-anonymity:3
+aliases:PERCENT OF PATIENTS WHO REPORTED THAT=PCNT

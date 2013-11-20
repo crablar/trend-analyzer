@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class LookUp {
 
-    Map<Field, Map<Object, List<Entity>>> lookUps;
+    private Map<Field, Map<Object, List<Entity>>> lookUps;
 
     public LookUp(){
         this.lookUps = new HashMap<>();
@@ -26,9 +26,9 @@ public class LookUp {
 
     public void addEntity(Entity entity) {
         for(Field field : Field.getAllFields()){
-            List matches = getEntities(field, entity.getAttribute(field));
+            List<Entity> matches = getEntities(field, entity.getAttribute(field));
             if(matches == null){
-                matches = new ArrayList(1);
+                matches = new ArrayList<>(1);
             }
             matches.add(entity);
             lookUps.get(field).put(entity.getAttribute(field), matches);

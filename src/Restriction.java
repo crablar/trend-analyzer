@@ -28,7 +28,7 @@ public class Restriction {
     public boolean allows(Object lhs) throws InvalidQueryException {
         try{
             if(field.isID()){
-               if(!operand.equals("=")){
+               if(operand.equals("=")){
                     return rhs.equals(lhs);
                }
                 throw new InvalidQueryException("ID comparison with bad operand.");

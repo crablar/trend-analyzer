@@ -20,10 +20,6 @@ public class DataStore {
         }
     }
 
-    static void addEntity(Entity entity) {
-        allEntities.addEntity(entity);
-    }
-
     public static Results getResults(Query query) throws InvalidQueryException{
         List<Entity> resultSet = new ArrayList<>();
         Map<Object, List<Entity>> lookup = allEntities.getFieldMappings(query.selectedField);
@@ -35,4 +31,16 @@ public class DataStore {
         return new Results(resultSet);
     }
 
+    static void addEntity(Entity entity) {
+        allEntities.addEntity(entity);
+    }
+
+    public static List<String> getAllFieldEntries(Field field) {
+        Map<Object, List<Entity>> fieldMappings = allEntities.getFieldMappings(field);
+        List<String> result = new ArrayList<>();
+        for(Object key : fieldMappings.keySet()){
+            result.add(key.toString());
+        }
+        return result;
+    }
 }

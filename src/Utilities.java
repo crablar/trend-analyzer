@@ -44,7 +44,8 @@ public class Utilities {
 
     public static void printCommandDescriptions() {
         System.out.println(
-            "'CLEAR' removes the results of the current session.\n" +
-            "'LIST' displays all available fields you can query on.");
+            "'clear' removes the results of the current session.\n" +
+            "'list' displays all available fields you can query on.\n" +
+            "'list fields <field name>' lists the range of entries for a given field");
     }
 }

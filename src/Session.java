@@ -1,8 +1,5 @@
-import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
 
 /**
  * User: jeffreymeyerson
@@ -20,11 +17,11 @@ public class Session {
     static Results results = new Results();
 
     public static void main(String[] args) throws Exception {
-        Initializer.init("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/config/hospital");
-        startSession();
+        Initializer.init();
+        runSession();
     }
 
-    public static void startSession() throws Exception {
+    public static void runSession() throws Exception {
         logger = new Logger();
         System.out.println("Welcome to TrendAnalyzer. Type 'commands' for help.\nBrowsing database: " + Configuration.configName);
         while(!finished){
@@ -34,32 +31,65 @@ public class Session {
             try {
                 if(!doCommand(input)) {
                     query = QueryUtil.simpleQuery(input);
-                    results = DataStore.getResults(query);
+                    if(results.isBlank()){
+                        results = DataStore.getResults(query);
+                    }
+                    else{
+                        results.refine(query);
+                    }
                 }
-            } catch (InvalidQueryException e) {
+            }
+            catch (InvalidQueryException e) {
                 System.out.println("Invalid query. Try again.");
                 continue;
             }
             logger.clearLog();
-            logger.out(results.toString());
+            logger.writeResults(results.toString());
         }
     }
 
-    private static boolean doCommand(String input){
+    private static boolean doCommand(String input) throws InvalidQueryException{
+        String[] inputArr = input.split(" ");
+        if(inputArr.length > 1){
+            return complexCommand(input);
+        }
         switch(input){
             case("CLEAR"):
                 results = new Results();
-                break;
+                return true;
             case("LIST"):
                 Utilities.printAllFields();
-                break;
+                return true;
             case("COMMANDS"):
                 Utilities.printCommandDescriptions();
-                break;
+                return true;
             default:
                 return false;
         }
-        return true;
+    }
+
+    private static boolean complexCommand(String input) throws InvalidQueryException{
+        String[] lfArr = input.split(" ", 3);
+        if(lfArr[0].equals("LIST") && lfArr[1].equals("FIELDS")){
+            if(lfArr.length > 2)  {
+                printFields(lfArr[2]);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static void printFields(String fieldName) throws InvalidQueryException {
+        Field field = Field.getFieldForString(fieldName);
+        if(field != null){
+            List<String> fieldEntries = DataStore.getAllFieldEntries(field);
+            for(String ent : fieldEntries){
+                System.out.println(ent);
+            }
+        }
+        else{
+            throw new InvalidQueryException();
+        }
     }
 
 }

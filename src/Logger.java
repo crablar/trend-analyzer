@@ -18,9 +18,8 @@ public class Logger {
         writer = new BufferedWriter(fw);
     }
 
-    public void out(String msg) throws IOException {
+    public void writeResults(String msg) throws IOException {
         writer.write(msg);
-        System.out.println(msg);
         writer.close();
     }
 
