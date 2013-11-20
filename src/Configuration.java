@@ -31,6 +31,8 @@ public class Configuration {
     }
 
     private static void setAliases() {
+        if(!setupMap.containsKey("aliases"))
+            return;
         for(String al : setupMap.get("aliases").split("%20")){
             String[] arr = al.split("=");
             aliases.put(arr[0], arr[1]);

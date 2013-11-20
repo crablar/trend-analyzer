@@ -40,7 +40,7 @@ public class Session {
                 }
             }
             catch (InvalidQueryException e) {
-                System.out.println("Invalid query. Try again.");
+                System.out.println(e.reason);
                 continue;
             }
             logger.clearLog();
@@ -54,6 +54,9 @@ public class Session {
             return complexCommand(input);
         }
         switch(input){
+            case("PRINT"):
+                System.out.println(results.toString());
+                return true;
             case("CLEAR"):
                 results = new Results();
                 return true;

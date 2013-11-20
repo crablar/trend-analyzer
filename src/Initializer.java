@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Initializer {
 
-    private final static String configFilePath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/config/hospital";
+    private final static String configFilePath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/config/airsampling";
 
     static void init() throws Exception{
         Configuration.configure(configFilePath);
@@ -22,7 +22,7 @@ public class Initializer {
         String[] columnTypes = line.split(",");
         DataStore.initialize(columnTypes);
         for(int i = 0; i < Configuration.numLinesToRead; i++){
-            line = s.nextLine();
+            line = s.nextLine().toUpperCase();
             if(line.endsWith(","))
                 line += ",";
             DataStore.addEntity(new Entity(line.replace(",,", ",NO ENTRY,").split(",")));

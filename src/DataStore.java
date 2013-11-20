@@ -28,7 +28,9 @@ public class DataStore {
                 resultSet.addAll(e.getValue());
             }
         }
-        return new Results(resultSet);
+        Results results = new Results(resultSet);
+        AnonymityVerifier.assertAnonymity(results);
+        return results;
     }
 
     static void addEntity(Entity entity) {
