@@ -42,6 +42,16 @@ public class Field {
         return this.fieldType == FieldType.CAT_SENSITIVE || this.fieldType == FieldType.CONT_SENSITIVE;
     }
 
+    public boolean isCat(){
+        return this.fieldType == FieldType.CAT || this.fieldType == FieldType.CAT_SENSITIVE;
+    }
+
+    public boolean isTime(){
+        return this.fieldType == FieldType.TIME;
+    }
+
+
+
     public String toString(){
         return name;
     }

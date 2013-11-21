@@ -9,6 +9,8 @@ import java.util.*;
  */
 public class Configuration {
 
+    public static final String projectPath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/";
+
     public static Set<String> queryOperands = new HashSet<>();
     public static Map<String,String> aliases = new HashMap<>();
     public static int numLinesToRead;

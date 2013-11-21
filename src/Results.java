@@ -40,4 +40,15 @@ public class Results {
     public boolean isBlank() {
         return blank;
     }
+
+    public double[][] getTuples(Field xAxis, Field yAxis) {
+        double[][] result = new double[resultSet.size()][2];
+        for(int i = 0; i < resultSet.size(); i++){
+            double x = (Double)resultSet.get(i).getAttribute(xAxis);
+            double y = (Double)resultSet.get(i).getAttribute(yAxis);
+            result[i][0] = x;
+            result[i][1] = y;
+        }
+        return result;
+    }
 }
