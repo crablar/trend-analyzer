@@ -1,6 +1,7 @@
 import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import java.io.*;
+import java.util.Scanner;
 
 /**
  * User: jeffreymeyerson
@@ -14,11 +15,19 @@ public class ChartMaker {
             throw new IllegalArgumentException("Cannot make scatter plot " +
                 "with fields: " + xAxis + ", " + yAxis);
         }
-        copyTemplate(xAxis.name + "_" + yAxis.name, "scatter");
-        double[][] xyTuples = results.getTuples(xAxis, yAxis);
+        File jsPlot = copyTemplate(xAxis.name + "_" + yAxis.name, "scatter");
+        String[][] xyTuples = results.getTuples(xAxis, yAxis);
+        StringBuilder sb = new StringBuilder("[");
+        for(int i = 0; i < xyTuples.length; i++){
+            sb.append("[" + xyTuples[i][0] + "," + xyTuples[i][1] + "],");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("]");
+        Scanner scan = new Scanner(jsPlot);
+
     }
 
-	private static void copyTemplate(String plotName, String templateName) throws IOException{
+	private static File copyTemplate(String plotName, String templateName) throws IOException{
 		File template = new File(Configuration.projectPath + "visualization/templates/" + templateName + ".html");
         File scatterPlot = new File(Configuration.projectPath + "visualization/" + templateName + "/" + plotName.toLowerCase() + ".html");
 
@@ -38,6 +47,7 @@ public class ChartMaker {
 
 		inStream.close();
 		outStream.close();
+        return scatterPlot;
     }
 
 }

@@ -20,7 +20,7 @@ public class Results {
     }
 
     public Results() {
-        resultSet = new ArrayList<Entity>();
+        resultSet = new ArrayList<>();
         blank = true;
     }
 
@@ -41,11 +41,11 @@ public class Results {
         return blank;
     }
 
-    public double[][] getTuples(Field xAxis, Field yAxis) {
-        double[][] result = new double[resultSet.size()][2];
+    public String[][] getTuples(Field field1, Field field2) {
+        String[][] result = new String[resultSet.size()][2];
         for(int i = 0; i < resultSet.size(); i++){
-            double x = (Double)resultSet.get(i).getAttribute(xAxis);
-            double y = (Double)resultSet.get(i).getAttribute(yAxis);
+            String x = "" + resultSet.get(i).getAttribute(field1);
+            String y = "" + resultSet.get(i).getAttribute(field2);
             result[i][0] = x;
             result[i][1] = y;
         }
