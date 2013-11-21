@@ -17,14 +17,23 @@ public class ChartMaker {
         }
         File jsPlot = copyTemplate(xAxis.name + "_" + yAxis.name, "scatter");
         String[][] xyTuples = results.getTuples(xAxis, yAxis);
-        StringBuilder sb = new StringBuilder("[");
+        StringBuilder tupleString = new StringBuilder("[");
         for(int i = 0; i < xyTuples.length; i++){
-            sb.append("[" + xyTuples[i][0] + "," + xyTuples[i][1] + "],");
+            tupleString.append("[" + xyTuples[i][0] + "," + xyTuples[i][1] + "],");
         }
-        sb.deleteCharAt(sb.length() - 1);
-        sb.append("]");
+        tupleString.deleteCharAt(tupleString.length() - 1);
+        tupleString.append("]");
         Scanner scan = new Scanner(jsPlot);
-
+        StringBuilder fileString = new StringBuilder("");
+        String line;
+        while(scan.hasNextLine()){
+            line = scan.nextLine();
+            if(line.contains("$F_1_PAIRS")){
+                line.replace("$F_1_PAIRS", tupleString.toString());
+                System.out.println(line);
+            }
+            fileString.append(line + "\n");
+        }
     }
 
 	private static File copyTemplate(String plotName, String templateName) throws IOException{
