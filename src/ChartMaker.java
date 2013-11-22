@@ -15,25 +15,30 @@ public class ChartMaker {
             throw new IllegalArgumentException("Cannot make scatter plot " +
                 "with fields: " + xAxis + ", " + yAxis);
         }
-        File jsPlot = copyTemplate(xAxis.name + "_" + yAxis.name, "scatter");
+        File plotTemplate = copyTemplate(xAxis.name + "_" + yAxis.name, "scatter");
         String[][] xyTuples = results.getTuples(xAxis, yAxis);
-        StringBuilder tupleString = new StringBuilder("[");
+        StringBuilder tupleString = new StringBuilder("");
         for(int i = 0; i < xyTuples.length; i++){
             tupleString.append("[" + xyTuples[i][0] + "," + xyTuples[i][1] + "],");
         }
         tupleString.deleteCharAt(tupleString.length() - 1);
-        tupleString.append("]");
-        Scanner scan = new Scanner(jsPlot);
+        Scanner scan = new Scanner(plotTemplate);
         StringBuilder fileString = new StringBuilder("");
         String line;
         while(scan.hasNextLine()){
             line = scan.nextLine();
             if(line.contains("$F_1_PAIRS")){
-                line.replace("$F_1_PAIRS", tupleString.toString());
+                line = line.replace("$F_1_PAIRS", tupleString.toString());
                 System.out.println(line);
             }
             fileString.append(line + "\n");
         }
+        fileString.deleteCharAt(fileString.length() - 1);
+        File jsPlot = new File(plotTemplate.toURI());
+        jsPlot.createNewFile();
+        FileWriter fileWriter = new FileWriter(jsPlot);
+        fileWriter.write(fileString.toString());
+        fileWriter.flush();
     }
 
 	private static File copyTemplate(String plotName, String templateName) throws IOException{
