@@ -1,8 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
-import pojo.Logger;
-import pojo.Query;
-import pojo.Results;
+import pojos.Logger;
+import pojos.Query;
+import pojos.Results;
 import singleton.Configuration;
 import singleton.DataStore;
 import singleton.Initializer;
@@ -35,7 +35,7 @@ public class HospitalTest {
 
     @Test
     public void testCat2() throws Exception{
-        Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
+        Query query = QueryUtil.simpleQuery("Hospital Name != Southeast Alabama Medical Center");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
     }
@@ -49,7 +49,7 @@ public class HospitalTest {
 
     @Test
     public void testCont2() throws Exception{
-        Query query = QueryUtil.simpleQuery("pcnt who reported that their nurses Usually communicated well. > 0");
+        Query query = QueryUtil.simpleQuery("PCNT THE AREA AROUND THEIR ROOM WAS SOMETIMES OR NEVER QUIET AT NIGHT. > 0");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
     }

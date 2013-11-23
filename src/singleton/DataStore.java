@@ -1,6 +1,6 @@
 package singleton;
 
-import pojo.*;
+import pojos.*;
 
 import java.util.*;
 

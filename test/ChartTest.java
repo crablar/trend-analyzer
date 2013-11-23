@@ -1,11 +1,11 @@
-import chart.ChartMaker;
+import chart.BarChartMaker;
 import chart.ScatterPlotMaker;
 import org.junit.Before;
 import org.junit.Test;
-import pojo.Field;
-import pojo.Logger;
-import pojo.Query;
-import pojo.Results;
+import pojos.Field;
+import pojos.Logger;
+import pojos.Query;
+import pojos.Results;
 import singleton.Configuration;
 import singleton.DataStore;
 import singleton.Initializer;
@@ -24,16 +24,24 @@ public class ChartTest {
     public void setUp() throws Exception{
         Configuration.configName = "airsampling";
         Initializer.init();
-        logger = new Logger();
     }
 
     @Test
-    public void testChart() throws Exception{
+    public void testScatter() throws Exception{
         Query query = QueryUtil.simpleQuery("Latitude > 20");
         Results results = DataStore.getResults(query);
         Field x = Field.getFieldForString("LATITUDE");
         Field y = Field.getFieldForString("LONGITUDE");
         ScatterPlotMaker.makeChart(results, x, y);
+    }
+
+    @Test
+    public void testBar() throws Exception{
+        Query query = QueryUtil.simpleQuery("Latitude > 20");
+        Results results = DataStore.getResults(query);
+        Field cont = Field.getFieldForString("LATITUDE");
+        Field cat = Field.getFieldForString("LOCATION");
+        BarChartMaker.makeChart(results, cont, cat);
     }
 
 }

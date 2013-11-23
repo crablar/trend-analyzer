@@ -1,7 +1,7 @@
 package singleton;
 
-import pojo.Entity;
-import pojo.Field;
+import pojos.Entity;
+import pojos.Field;
 
 import java.util.ArrayList;
 import java.util.HashMap;

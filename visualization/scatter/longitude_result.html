@@ -9,15 +9,12 @@ $(function () {
                 zoomType: 'xy'
             },
             title: {
-                text: '$FIELD_1 versus $FIELD_2'
+                text: 'LONGITUDE versus RESULT'
             },
-			subtitle: {
-				text: '$SOURCE'
-			},
             xAxis: {
                 title: {
                     enabled: true,
-                    text: '$FIELD_1'
+                    text: 'LONGITUDE'
                 },
                 startOnTick: true,
                 endOnTick: true,
@@ -25,7 +22,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: '$FIELD_2'
+                    text: 'RESULT'
                 }
             },
             plotOptions: {
@@ -55,7 +52,7 @@ $(function () {
             series: [{
                 name: 'Entities',
                 color: 'rgba(223, 83, 83, .5)',
-                data: [$PAIRS]
+                data: [[70085.0,0.027],[70085.0,0.54],[70085.0,0.96],[70085.0,INVALID FORMAT],[70085.0,0.91],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[70085.0,INVALID FORMAT],[36532.0,2.27],[39507.0,1.39],[32508.0,INVALID FORMAT],[32508.0,1.12E-4],[39507.0,0.08],[39507.0,INVALID FORMAT],[39507.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[39507.0,0.48],[36532.0,0.17],[36532.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[36532.0,INVALID FORMAT],[32508.0,0.07]]
     
             }]
         });

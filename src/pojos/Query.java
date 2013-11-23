@@ -1,4 +1,4 @@
-package pojo;
+package pojos;
 
 /**
  * User: jeffreymeyerson

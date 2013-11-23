@@ -1,7 +1,7 @@
 package singleton;
 
-import pojo.InvalidQueryException;
-import pojo.Results;
+import pojos.InvalidQueryException;
+import pojos.Results;
 
 /**
  * User: jeffreymeyerson

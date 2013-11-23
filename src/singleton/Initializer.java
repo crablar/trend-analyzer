@@ -1,6 +1,6 @@
 package singleton;
 
-import pojo.Entity;
+import pojos.Entity;
 
 import java.io.File;
 import java.util.Map;

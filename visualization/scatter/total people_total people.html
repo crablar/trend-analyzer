@@ -9,15 +9,12 @@ $(function () {
                 zoomType: 'xy'
             },
             title: {
-                text: '$FIELD_1 versus $FIELD_2'
+                text: 'TOTAL PEOPLE versus TOTAL PEOPLE'
             },
-			subtitle: {
-				text: '$SOURCE'
-			},
             xAxis: {
                 title: {
                     enabled: true,
-                    text: '$FIELD_1'
+                    text: 'TOTAL PEOPLE'
                 },
                 startOnTick: true,
                 endOnTick: true,
@@ -25,7 +22,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: '$FIELD_2'
+                    text: 'TOTAL PEOPLE'
                 }
             },
             plotOptions: {
@@ -55,7 +52,7 @@ $(function () {
             series: [{
                 name: 'Entities',
                 color: 'rgba(223, 83, 83, .5)',
-                data: [$PAIRS]
+                data: [[350.0,350.0]]
     
             }]
         });

@@ -1,0 +1,63 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div><script>
+
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'LATITUDE by LOCATION'
+            },
+            subtitle: {
+                text: 'airsampling'
+            },
+            xAxis: {
+                categories: ['GPMS','C05','C05','FAAL','C05','FAAL','C05','PEFL','FAAL','PEFL','C05','GPMS','FAAL','C05','C05','FAAL','C05','GPMS','C05','FAAL','FAAL','GPMS','C05','C05'],
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'LATITUDE',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' millions'
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -40,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: '#FFFFFF',
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'LATITUDE',
+                data: [40.0,84.0,84.0,32.0,87.0,87.0,80.0,80.0,80.0,98.0,26.0,81.0,97.0,66.0,83.0,83.0,25.0,52.0,88.0,46.0,89.0,91.0,54.0,39.0]
+            }]
+        });
+    });
+</script>

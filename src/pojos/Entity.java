@@ -1,4 +1,4 @@
-package pojo;
+package pojos;
 
 import singleton.CSVFormatter;
 import singleton.DataStore;
@@ -42,7 +42,7 @@ public class Entity {
     }
 
     /**
-     * @return a version of the pojo.Entity with sensitive fields removed.
+     * @return a version of the pojos.Entity with sensitive fields removed.
      */
     public Entity censoredCopy(){
         HashMap<Field, Object> attCopy = new HashMap<Field, Object>();

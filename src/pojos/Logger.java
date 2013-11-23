@@ -1,4 +1,4 @@
-package pojo;
+package pojos;
 
 import java.io.*;
 

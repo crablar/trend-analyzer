@@ -1,4 +1,4 @@
-package pojo;
+package pojos;
 
 /**
  * User: jeffreymeyerson
@@ -7,9 +7,9 @@ package pojo;
  */
 public class Restriction {
 
-    Field field;
-    String operand;
-    Object rhs;
+    private Field field;
+    private String operand;
+    private Object rhs;
 
     public Restriction(Field field, String operand, String rhs) throws InvalidQueryException {
         this.field = field;
@@ -33,6 +33,9 @@ public class Restriction {
                if(operand.equals("=")){
                     return rhs.equals(lhs);
                }
+               if(operand.equals("!=")){
+                    return rhs.equals(lhs);
+               }
                 throw new InvalidQueryException("ID comparison with bad operand.");
             }
             if(field.isCont()){
@@ -43,12 +46,19 @@ public class Restriction {
                         return (Double)lhs > (Double)rhs;
                     case("="):
                         return lhs.equals(rhs);
+                    case("!="):
+                        return !lhs.equals(rhs);
                     default:
                         return false;
                 }
             }
             else{
-                return lhs.equals(rhs);
+                switch(operand){
+                    case("!="):
+                        return !lhs.equals(rhs);
+                    default:
+                        return lhs.equals(rhs);
+                }
             }
         }
         catch(ClassCastException e){

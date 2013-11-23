@@ -1,7 +1,8 @@
 package chart;
 
-import pojo.Field;
-import pojo.Results;
+import pojos.Field;
+import pojos.Results;
+import singleton.Configuration;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -14,7 +15,7 @@ import java.util.Scanner;
 public class ScatterPlotMaker extends ChartMaker{
 
     public static void makeChart(Results results, Field xAxis, Field yAxis) throws Exception{
-        if(xAxis.isCat() || xAxis.isID() || yAxis.isCat() || yAxis.isID()){
+        if(!(xAxis.isCont() && yAxis.isCont())){
             throw new IllegalArgumentException("Cannot make scatter plot " +
                 "with fields: " + xAxis + ", " + yAxis);
         }
@@ -30,15 +31,10 @@ public class ScatterPlotMaker extends ChartMaker{
         String line;
         while(scan.hasNextLine()){
             line = scan.nextLine();
-            if(line.contains("$PAIRS")){
-                line = line.replace("$PAIRS", tupleString.toString());
-            }
-            if(line.contains("$FIELD_1")){
-                line = line.replace("$FIELD_1", xAxis.name);
-            }
-            if(line.contains("$FIELD_2")){
-                line = line.replace("$FIELD_2", yAxis.name);
-            }
+            line = line.replace("$PAIRS", tupleString.toString());
+            line = line.replace("$SOURCE", Configuration.configName);
+            line = line.replace("$FIELD_1", xAxis.name);
+            line = line.replace("$FIELD_2", yAxis.name);
             fileString.append(line + "\n");
         }
         fileString.deleteCharAt(fileString.length() - 1);

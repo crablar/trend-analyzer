@@ -1,7 +1,7 @@
 package singleton;
 
 import chart.ScatterPlotMaker;
-import pojo.*;
+import pojos.*;
 
 import java.util.List;
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class Session {
     static Results results = new Results();
 
     public static void main(String[] args) throws Exception {
-        Configuration.configName = "hospital";
+        Configuration.configName = "whitehouse";
         Initializer.init();
         runSession();
     }
@@ -90,9 +90,9 @@ public class Session {
                     return true;
                 }
             }
-            else if(input.startsWith("GRAPH")){
+            else if(input.startsWith("CHART")){
                 if(results.isBlank()){
-                    throw new InvalidQueryException("Can't graph empty result set.");
+                    throw new InvalidQueryException("Can't chart empty result set.");
                 }
                 String fieldStr = input.split(" ", 3)[2];
                 String[] fieldNames = fieldStr.split("&");

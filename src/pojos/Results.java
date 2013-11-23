@@ -1,4 +1,4 @@
-package pojo;
+package pojos;
 
 import singleton.Utilities;
 
@@ -33,6 +33,8 @@ public class Results {
     }
 
     public String toString(){
+        if(resultSet == null)
+            return null;
         return Utilities.formatGridToString(Utilities.toStringGrid(resultSet));
     }
 

@@ -1,9 +1,9 @@
 package singleton;
 
-import pojo.Field;
-import pojo.InvalidQueryException;
-import pojo.Query;
-import pojo.Restriction;
+import pojos.Field;
+import pojos.InvalidQueryException;
+import pojos.Query;
+import pojos.Restriction;
 
 /**
  * Created with IntelliJ IDEA.

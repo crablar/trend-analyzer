@@ -1,6 +1,6 @@
 package singleton;
 
-import pojo.Field;
+import pojos.Field;
 
 import java.util.IllegalFormatException;
 

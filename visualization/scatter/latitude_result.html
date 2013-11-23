@@ -9,15 +9,12 @@ $(function () {
                 zoomType: 'xy'
             },
             title: {
-                text: '$FIELD_1 versus $FIELD_2'
+                text: 'LATITUDE Versus RESULT'
             },
-			subtitle: {
-				text: '$SOURCE'
-			},
             xAxis: {
                 title: {
                     enabled: true,
-                    text: '$FIELD_1'
+                    text: 'LATITUDE'
                 },
                 startOnTick: true,
                 endOnTick: true,
@@ -25,7 +22,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: '$FIELD_2'
+                    text: 'RESULT'
                 }
             },
             plotOptions: {
@@ -53,9 +50,9 @@ $(function () {
                 }
             },
             series: [{
-                name: 'Entities',
+                name: 'LATITUDE',
                 color: 'rgba(223, 83, 83, .5)',
-                data: [$PAIRS]
+                data: [[84.0,0.54],[32.0,0.17],[84.0,0.91],[52.0,0.08],[83.0,2.27],[81.0,0.48],[91.0,1.39],[25.0,0.96]]
     
             }]
         });

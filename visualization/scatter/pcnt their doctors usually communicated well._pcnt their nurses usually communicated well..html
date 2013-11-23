@@ -9,15 +9,12 @@ $(function () {
                 zoomType: 'xy'
             },
             title: {
-                text: '$FIELD_1 versus $FIELD_2'
+                text: 'PCNT THEIR DOCTORS USUALLY COMMUNICATED WELL. versus PCNT THEIR NURSES USUALLY COMMUNICATED WELL.'
             },
-			subtitle: {
-				text: '$SOURCE'
-			},
             xAxis: {
                 title: {
                     enabled: true,
-                    text: '$FIELD_1'
+                    text: 'PCNT THEIR DOCTORS USUALLY COMMUNICATED WELL.'
                 },
                 startOnTick: true,
                 endOnTick: true,
@@ -25,7 +22,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: '$FIELD_2'
+                    text: 'PCNT THEIR NURSES USUALLY COMMUNICATED WELL.'
                 }
             },
             plotOptions: {
@@ -55,7 +52,7 @@ $(function () {
             series: [{
                 name: 'Entities',
                 color: 'rgba(223, 83, 83, .5)',
-                data: [$PAIRS]
+                data: [[14.0,19.0],[13.0,16.0],[13.0,17.0],[10.0,19.0],[8.0,21.0],[9.0,12.0],[10.0,14.0],[13.0,15.0],[13.0,17.0],[10.0,15.0],[14.0,18.0],[8.0,14.0],[14.0,16.0],[15.0,19.0],[10.0,17.0],[14.0,17.0],[12.0,15.0],[11.0,16.0],[10.0,16.0],[10.0,14.0],[12.0,14.0],[12.0,16.0],[9.0,15.0],[12.0,18.0],[12.0,14.0],[14.0,18.0],[16.0,18.0],[15.0,18.0],[9.0,13.0],[9.0,12.0]]
     
             }]
         });
