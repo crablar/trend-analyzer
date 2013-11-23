@@ -1,3 +1,7 @@
+package singleton;
+
+import pojo.Entity;
+
 import java.io.File;
 import java.util.Map;
 import java.util.Scanner;
@@ -9,10 +13,8 @@ import java.util.Scanner;
  */
 public class Initializer {
 
-    private final static String configFilePath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/config/airsampling";
-
-    static void init() throws Exception{
-        Configuration.configure(configFilePath);
+    public static void init() throws Exception{
+        Configuration.configure();
         Scanner s = new Scanner(new File(Configuration.CSVFilePath));
         String line = s.nextLine().toUpperCase();
         String[] columnNames = line.split(",");

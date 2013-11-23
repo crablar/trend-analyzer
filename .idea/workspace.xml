@@ -2,8 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c0019-956a-40c0-a14f-469739c6cef5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChartMaker.java" afterPath="$PROJECT_DIR$/src/ChartMaker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chart/BarChartMaker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chart/ChartMaker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pojo/InvalidQueryException.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/InvalidQueryException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ResultEntity.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AnonymityVerifier.java" afterPath="$PROJECT_DIR$/src/singleton/AnonymityVerifier.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CSVFormatter.java" afterPath="$PROJECT_DIR$/src/singleton/CSVFormatter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ChartMaker.java" afterPath="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Configuration.java" afterPath="$PROJECT_DIR$/src/singleton/Configuration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DataStore.java" afterPath="$PROJECT_DIR$/src/singleton/DataStore.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Entity.java" afterPath="$PROJECT_DIR$/src/pojo/Entity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Field.java" afterPath="$PROJECT_DIR$/src/pojo/Field.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Initializer.java" afterPath="$PROJECT_DIR$/src/singleton/Initializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Logger.java" afterPath="$PROJECT_DIR$/src/pojo/Logger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/LookUp.java" afterPath="$PROJECT_DIR$/src/singleton/LookUp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Query.java" afterPath="$PROJECT_DIR$/src/pojo/Query.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/QueryUtil.java" afterPath="$PROJECT_DIR$/src/singleton/QueryUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Restriction.java" afterPath="$PROJECT_DIR$/src/pojo/Restriction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Results.java" afterPath="$PROJECT_DIR$/src/pojo/Results.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Session.java" afterPath="$PROJECT_DIR$/src/singleton/Session.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilities.java" afterPath="$PROJECT_DIR$/src/singleton/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ChartTest.java" afterPath="$PROJECT_DIR$/test/ChartTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/HospitalTest.java" afterPath="$PROJECT_DIR$/test/HospitalTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/airsampling" afterPath="$PROJECT_DIR$/src/config/airsampling" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/hospital" afterPath="$PROJECT_DIR$/src/config/hospital" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output.csv" afterPath="$PROJECT_DIR$/src/output.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualization/templates/scatter.html" afterPath="$PROJECT_DIR$/visualization/templates/scatter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trends.sh" afterPath="$PROJECT_DIR$/trends.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrendAnalyzer.iws" />
@@ -14,37 +40,40 @@
     <file path="/Reader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383411127731" ignored="false" />
     <file path="/EntityMap.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383410626053" ignored="false" />
     <file path="/Entity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384625742056" ignored="false" />
-    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385061965667" ignored="false" />
+    <file path="/Field.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218710734" ignored="false" />
     <file path="/Database.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383614930604" ignored="false" />
-    <file path="/fragment.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384984437378" ignored="false" />
+    <file path="/fragment.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218434146" ignored="false" />
     <file path="/Loader.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383615050997" ignored="false" />
-    <file path="/Query.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383700634175" ignored="false" />
-    <file path="/InvalidQueryException.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384975906988" ignored="false" />
+    <file path="/Query.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218771760" ignored="false" />
+    <file path="/InvalidQueryException.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385156142905" ignored="false" />
     <file path="/Restriction.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384900044371" ignored="false" />
     <file path="/Dummy.txt" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384619384837" ignored="false" />
     <file path="/QueryTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384633942479" ignored="false" />
     <file path="/Formatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383519929888" ignored="false" />
     <file path="/Configurator.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962651330" ignored="false" />
-    <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384984433116" ignored="false" />
+    <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385219596927" ignored="false" />
     <file path="/CSVFormatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384025602218" ignored="false" />
     <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384867006158" ignored="false" />
-    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384985198344" ignored="false" />
+    <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218665704" ignored="false" />
     <file path="/Queries.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384016396269" ignored="false" />
     <file path="/Initializer.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384982894302" ignored="false" />
     <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384962669758" ignored="false" />
-    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385050004431" ignored="false" />
-    <file path="/Utilities.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384900626554" ignored="false" />
+    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385219571864" ignored="false" />
+    <file path="/Utilities.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385141259807" ignored="false" />
     <file path="/ResultEntity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384134234270" ignored="false" />
     <file path="/AnonymityVerifier.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384985247084" ignored="false" />
     <file path="/HospitalTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384896348052" ignored="false" />
     <file path="/QueryUtil.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384875714569" ignored="false" />
-    <file path="/Results.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385069034188" ignored="false" />
+    <file path="/Results.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385142406766" ignored="false" />
     <file path="/LookUp.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384973787699" ignored="false" />
     <file path="/airsampling" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384981617654" ignored="false" />
     <file path="/InsufficientAnonymityException.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384984459091" ignored="false" />
-    <file path="/ChartMaker.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385078404348" ignored="false" />
+    <file path="/ChartMaker.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385217858570" ignored="false" />
     <file path="/AirSamplingTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385059021968" ignored="false" />
-    <file path="/ChartTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385062960172" ignored="false" />
+    <file path="/ChartTest.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385219722407" ignored="false" />
+    <file path="/scatter.html" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385142667802" ignored="false" />
+    <file path="/BarChartMaker.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385217679321" ignored="false" />
+    <file path="/ScatterPlotMaker.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218133752" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +126,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/ChartMaker.java" line="35" class="ChartMaker" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/chart/ChartMaker.java" line="4" class="ChartMaker" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -121,40 +150,13 @@
     <favorites_list name="TrendAnalyzer" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5340467">
+    <splitter split-orientation="horizontal" split-proportion="0.4922179">
       <split-first>
         <leaf>
-          <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Field.java">
+          <file leaf-file-name="Session.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/singleton/Session.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="37" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AnonymityVerifier.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AnonymityVerifier.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Initializer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Session.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Session.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="46" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+                <state line="24" column="44" selection-start="568" selection-end="568" vertical-scroll-proportion="0.23684211">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -162,10 +164,37 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ChartMaker.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/ChartMaker.java">
+          <file leaf-file-name="InvalidQueryException.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pojo/InvalidQueryException.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="0" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+                <state line="24" column="25" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HospitalTest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/HospitalTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="51" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pojo/Logger.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ChartTest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/ChartTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="31" column="58" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -173,28 +202,39 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scatter.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="ScatterPlotMaker.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chart/ScatterPlotMaker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="37" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BarChartMaker.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chart/BarChartMaker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="45" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="scatter.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/visualization/templates/scatter.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="13" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.4642857">
+                <state line="10" column="3" selection-start="431" selection-end="431" vertical-scroll-proportion="-6.25">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Configuration.java">
+          <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/Utilities.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Results.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Results.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="0" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
+                <state line="12" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -202,10 +242,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ParentRunner.class" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
+          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pojo/Entity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+                <state line="19" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -215,28 +255,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Restriction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Restriction.java">
+          <file leaf-file-name="DataStore.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/DataStore.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="50" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+                <state line="11" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="output.csv" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/output.csv">
+          <file leaf-file-name="Results.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pojo/Results.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ChartTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/ChartTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="22" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+                <state line="35" column="21" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -244,31 +275,78 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="airsampling.csv" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sample_data/airsampling.csv">
+          <file leaf-file-name="AnonymityVerifier.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/AnonymityVerifier.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="24" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HospitalTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/HospitalTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="53" selection-start="408" selection-end="550" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="latitude_longitude.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/visualization/scatter/latitude_longitude.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="53" column="36" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.5084746">
+                <state line="19" column="64" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/Initializer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LookUp.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/LookUp.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="QueryUtil.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/singleton/QueryUtil.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="34" column="0" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.2605459">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="44" column="5" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="airsampling" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/airsampling">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hospital" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/hospital">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CSVFormatter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/singleton/CSVFormatter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -293,22 +371,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sample_data/airsampling.csv" />
-        <option value="$PROJECT_DIR$/src/output.csv" />
-        <option value="$PROJECT_DIR$/src/Initializer.java" />
-        <option value="$PROJECT_DIR$/src/InsufficientAnonymityException.java" />
-        <option value="$PROJECT_DIR$/src/Session.java" />
-        <option value="$PROJECT_DIR$/src/DataStore.java" />
-        <option value="$PROJECT_DIR$/src/AnonymityVerifier.java" />
-        <option value="$PROJECT_DIR$/visualization/scatter.html" />
-        <option value="$PROJECT_DIR$/src/Configuration.java" />
-        <option value="$PROJECT_DIR$/test/AirSamplingTest.java" />
-        <option value="$PROJECT_DIR$/src/Field.java" />
+        <option value="$PROJECT_DIR$/src/chart/ChartMaker.java" />
+        <option value="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" />
+        <option value="$PROJECT_DIR$/src/singleton/DataStore.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Field.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Query.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Entity.java" />
+        <option value="$PROJECT_DIR$/src/pojo/Results.java" />
+        <option value="$PROJECT_DIR$/src/singleton/AnonymityVerifier.java" />
+        <option value="$PROJECT_DIR$/src/singleton/QueryUtil.java" />
+        <option value="$PROJECT_DIR$/src/singleton/Initializer.java" />
+        <option value="$PROJECT_DIR$/src/config/airsampling" />
+        <option value="$PROJECT_DIR$/src/config/hospital" />
+        <option value="$PROJECT_DIR$/src/singleton/Configuration.java" />
         <option value="$PROJECT_DIR$/test/ChartTest.java" />
-        <option value="$PROJECT_DIR$/src/Results.java" />
-        <option value="$PROJECT_DIR$/src/ChartMaker.java" />
-        <option value="$PROJECT_DIR$/visualization/templates/scatter.html" />
-        <option value="$PROJECT_DIR$/visualization/scatter/latitude_longitude.html" />
+        <option value="$PROJECT_DIR$/test/HospitalTest.java" />
+        <option value="$PROJECT_DIR$/src/singleton/Session.java" />
       </list>
     </option>
   </component>
@@ -448,6 +526,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -493,10 +607,13 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pojo" />
+      <recent name="singleton" />
+      <recent name="chart" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChartTest">
+  <component name="RunManager" selected="Application.Session">
     <configuration default="false" name="HospitalTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="TrendAnalyzer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -526,7 +643,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Session" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Session" />
+      <option name="MAIN_CLASS_NAME" value="singleton.Session" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -687,9 +804,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChartTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Session" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HospitalTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Session" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HospitalTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ChartTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -725,12 +842,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1276" height="778" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.6703125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4893617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48784193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -741,8 +858,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20081301" sideWeight="0.67173254" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16422765" sideWeight="0.67173254" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32826748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16422765" sideWeight="0.7446808" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25531915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -815,124 +932,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/src/singleton/LookUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.6330275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="46" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnonymityVerifier.java">
+    <entry file="file://$PROJECT_DIR$/src/pojo/InvalidQueryException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="24" column="25" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Restriction.java">
+    <entry file="file://$PROJECT_DIR$/src/singleton/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Field.java">
+    <entry file="file://$PROJECT_DIR$/src/pojo/Restriction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="37" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+        <state line="7" column="13" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/io/File.java">
+    <entry file="file://$PROJECT_DIR$/src/config/airsampling">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2110" column="18" selection-start="89245" selection-end="89245" vertical-scroll-proportion="0.33239436">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/hospital">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="5" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/ChartMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="43" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojo/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ChartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+        <state line="31" column="58" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/singleton/Initializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2178" column="18" selection-start="86053" selection-end="86053" vertical-scroll-proportion="0.33239436">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/singleton/QueryUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="402" column="18" selection-start="11658" selection-end="11658" vertical-scroll-proportion="0.33239436">
+        <state line="34" column="0" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.2605459">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/HospitalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="53" selection-start="408" selection-end="550" vertical-scroll-proportion="0.0">
+        <state line="51" column="0" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Results.java">
+    <entry file="file://$PROJECT_DIR$/src/singleton/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
+        <state line="24" column="44" selection-start="568" selection-end="568" vertical-scroll-proportion="0.23684211">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChartMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualization/templates/scatter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="13" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.4642857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualization/scatter/latitude_longitude.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="36" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.5084746">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

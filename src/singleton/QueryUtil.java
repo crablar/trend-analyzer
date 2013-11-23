@@ -1,5 +1,9 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package singleton;
+
+import pojo.Field;
+import pojo.InvalidQueryException;
+import pojo.Query;
+import pojo.Restriction;
 
 /**
  * Created with IntelliJ IDEA.

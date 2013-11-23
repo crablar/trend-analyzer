@@ -1,4 +1,3 @@
-configName:hospital
 CSVFilePath:/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/sample_data/hospital.csv
 numLinesToRead:30
 queryOperands:<,>,=,!=

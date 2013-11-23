@@ -9,10 +9,7 @@ $(function () {
                 zoomType: 'xy'
             },
             title: {
-                text: '$FIELD_1 Versus $FIELD_2'
-            },
-            subtitle: {
-                text: 'Source: $CONFIG'
+                text: '$FIELD_1 versus $FIELD_2'
             },
             xAxis: {
                 title: {
@@ -27,16 +24,6 @@ $(function () {
                 title: {
                     text: '$FIELD_2'
                 }
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'left',
-                verticalAlign: 'top',
-                x: 0,
-                y: 0,
-                floating: true,
-                backgroundColor: '#FFFFFF',
-                borderWidth: 1
             },
             plotOptions: {
                 scatter: {
@@ -63,9 +50,9 @@ $(function () {
                 }
             },
             series: [{
-                name: '$FIELD_1',
+                name: 'Entities',
                 color: 'rgba(223, 83, 83, .5)',
-                data: [$F_1_PAIRS]
+                data: [$PAIRS]
     
             }]
         });

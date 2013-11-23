@@ -1,3 +1,5 @@
+package pojo;
+
 /**
  * User: jeffreymeyerson
  * Date: 11/5/13
@@ -5,7 +7,7 @@
  */
 public class Query {
 
-    Field selectedField;
-    Restriction restriction;
+    public Field selectedField;
+    public Restriction restriction;
 
 }

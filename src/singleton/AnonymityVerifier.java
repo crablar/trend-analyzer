@@ -1,4 +1,7 @@
-import java.util.List;
+package singleton;
+
+import pojo.InvalidQueryException;
+import pojo.Results;
 
 /**
  * User: jeffreymeyerson
@@ -14,7 +17,7 @@ import java.util.List;
 
 public class AnonymityVerifier {
 
-    public static void assertAnonymity(Results results) throws InvalidQueryException{
+    public static void assertAnonymity(Results results) throws InvalidQueryException {
 
     }
 

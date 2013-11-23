@@ -1,3 +1,5 @@
+package pojo;
+
 /**
  * User: jeffreymeyerson
  * Date: 11/2/13
@@ -9,7 +11,7 @@ public class Restriction {
     String operand;
     Object rhs;
 
-    public Restriction(Field field, String operand, String rhs) throws InvalidQueryException{
+    public Restriction(Field field, String operand, String rhs) throws InvalidQueryException {
         this.field = field;
         this.operand = operand;
         if(field.isCont()){

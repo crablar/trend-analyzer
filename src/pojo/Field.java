@@ -1,3 +1,5 @@
+package pojo;
+
 import java.util.*;
 
 /**
@@ -11,11 +13,11 @@ public class Field {
         ID,TIME,CAT,CAT_SENSITIVE,CONT,CONT_SENSITIVE;
     }
 
-    static HashMap<Field, FieldType> fieldsToTypes = new HashMap<Field, FieldType>();
-    static HashMap<String, Field> stringsToFields = new HashMap<String, Field>();
+    public static HashMap<Field, FieldType> fieldsToTypes = new HashMap<Field, FieldType>();
+    public static HashMap<String, Field> stringsToFields = new HashMap<String, Field>();
 
-    String name;
-    FieldType fieldType;
+    public final String name;
+    public final FieldType fieldType;
 
     public static Field getFieldForString(String s){
         return stringsToFields.get(s);
@@ -49,8 +51,6 @@ public class Field {
     public boolean isTime(){
         return this.fieldType == FieldType.TIME;
     }
-
-
 
     public String toString(){
         return name;

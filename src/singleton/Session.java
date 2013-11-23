@@ -1,3 +1,8 @@
+package singleton;
+
+import chart.ScatterPlotMaker;
+import pojo.*;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,6 +22,7 @@ public class Session {
     static Results results = new Results();
 
     public static void main(String[] args) throws Exception {
+        Configuration.configName = "hospital";
         Initializer.init();
         runSession();
     }
@@ -48,14 +54,18 @@ public class Session {
         }
     }
 
-    private static boolean doCommand(String input) throws InvalidQueryException{
-        String[] inputArr = input.split(" ");
-        if(inputArr.length > 1){
+    private static boolean doCommand(String input) throws InvalidQueryException {
+        if(input.contains(" ")){
             return complexCommand(input);
         }
         switch(input){
             case("PRINT"):
-                System.out.println(results.toString());
+                if(results.isBlank()){
+                    System.out.println("No results loaded");
+                }
+                else{
+                    System.out.println(results.toString());
+                }
                 return true;
             case("CLEAR"):
                 results = new Results();
@@ -71,15 +81,34 @@ public class Session {
         }
     }
 
-    private static boolean complexCommand(String input) throws InvalidQueryException{
-        String[] lfArr = input.split(" ", 3);
-        if(lfArr[0].equals("LIST") && lfArr[1].equals("FIELDS")){
-            if(lfArr.length > 2)  {
-                printFields(lfArr[2]);
+    private static boolean complexCommand(String input) throws InvalidQueryException {
+        try{
+            if(input.startsWith("LIST FIELDS")){
+                String[] inputArr = input.split(" ", 3);
+                if(inputArr.length > 2)  {
+                    printFields(inputArr[2]);
+                    return true;
+                }
+            }
+            else if(input.startsWith("GRAPH")){
+                if(results.isBlank()){
+                    throw new InvalidQueryException("Can't graph empty result set.");
+                }
+                String fieldStr = input.split(" ", 3)[2];
+                String[] fieldNames = fieldStr.split("&");
+                Field field1 = Field.getFieldForString(fieldNames[0]);
+                Field field2 = Field.getFieldForString(fieldNames[1]) ;
+                ScatterPlotMaker.makeChart(results, field1, field2);
                 return true;
             }
+            return false;
         }
-        return false;
+        catch(Exception e){
+            if(e instanceof InvalidQueryException){
+                throw (InvalidQueryException)e;
+            }
+            throw new InvalidQueryException("Problem with command: " + input);
+        }
     }
 
     private static void printFields(String fieldName) throws InvalidQueryException {

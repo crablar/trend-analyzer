@@ -1,3 +1,5 @@
+package singleton;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -10,6 +12,7 @@ import java.util.*;
 public class Configuration {
 
     public static final String projectPath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/";
+    private final static String configPath = "src/config/";
 
     public static Set<String> queryOperands = new HashSet<>();
     public static Map<String,String> aliases = new HashMap<>();
@@ -19,13 +22,13 @@ public class Configuration {
 
     private static Map<String, String> setupMap = new HashMap<>();
 
-    public static void configure(String configurationFilePath) throws FileNotFoundException {
+    public static void configure() throws FileNotFoundException {
+        String configurationFilePath = projectPath + configPath + configName;
         Scanner scanner = new Scanner(new File(configurationFilePath));
         while(scanner.hasNextLine()){
             String[] lineArr = scanner.nextLine().split(":");
             setupMap.put(lineArr[0], lineArr[1]);
         }
-        setConfigName();
         setLinesToRead();
         setQueryOperands();
         setCSVFilePath();
@@ -39,10 +42,6 @@ public class Configuration {
             String[] arr = al.split("=");
             aliases.put(arr[0], arr[1]);
         }
-    }
-
-    private static void setConfigName(){
-        configName = setupMap.get("configName");
     }
 
     private static void setLinesToRead() {

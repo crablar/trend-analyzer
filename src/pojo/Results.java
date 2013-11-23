@@ -1,7 +1,9 @@
+package pojo;
+
+import singleton.Utilities;
+
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * User: jeffreymeyerson
@@ -12,16 +14,13 @@ import java.util.Set;
 public class Results {
 
     List<Entity> resultSet;
-    private boolean blank;
 
     public Results(List<Entity> resultSet){
         this.resultSet = resultSet;
-        blank = true;
     }
 
     public Results() {
         resultSet = new ArrayList<>();
-        blank = true;
     }
 
     public void refine(Query query) throws InvalidQueryException {
@@ -38,7 +37,7 @@ public class Results {
     }
 
     public boolean isBlank() {
-        return blank;
+        return resultSet == null || resultSet.size() == 0;
     }
 
     public String[][] getTuples(Field field1, Field field2) {

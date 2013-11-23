@@ -1,5 +1,12 @@
 import org.junit.Before;
 import org.junit.Test;
+import pojo.Logger;
+import pojo.Query;
+import pojo.Results;
+import singleton.Configuration;
+import singleton.DataStore;
+import singleton.Initializer;
+import singleton.QueryUtil;
 
 /**
  * User: jeffreymeyerson
@@ -12,6 +19,7 @@ public class HospitalTest {
 
     @Before
     public void setUp() throws Exception{
+        Configuration.configName = "hospital";
         if(DataStore.columns == null){
             Initializer.init();
         }
@@ -23,7 +31,6 @@ public class HospitalTest {
         Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
-        logger.clearLog();
     }
 
     @Test
@@ -31,7 +38,6 @@ public class HospitalTest {
         Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
-        logger.clearLog();
     }
 
     @Test
@@ -39,15 +45,13 @@ public class HospitalTest {
         Query query = QueryUtil.simpleQuery("Survey Response Rate Percent > 50");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
-        logger.clearLog();
     }
 
     @Test
     public void testCont2() throws Exception{
-        Query query = QueryUtil.simpleQuery("Percent of patients who reported that their nurses Usually communicated well. > 0");
+        Query query = QueryUtil.simpleQuery("pcnt who reported that their nurses Usually communicated well. > 0");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
-        //logger.clearLog();
     }
 
 

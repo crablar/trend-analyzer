@@ -1,6 +1,9 @@
-import java.util.Arrays;
+package singleton;
+
+import pojo.Entity;
+import pojo.Field;
+
 import java.util.List;
-import java.util.Set;
 
 /**
  * User: jeffreymeyerson
@@ -39,13 +42,16 @@ public class Utilities {
 
     public static void printAllFields() {
         for(Field f : Field.getAllFields())
-            System.out.println(f.toString());
+            System.out.println(f.toString() + " (" + f.fieldType + ")");
     }
 
     public static void printCommandDescriptions() {
         System.out.println(
+            "'print' displays the result set that is currently in memory\n" +
             "'clear' removes the results of the current session.\n" +
             "'list' displays all available fields you can query on.\n" +
-            "'list fields <field name>' lists the range of entries for a given field");
+            "'list fields <field name>' lists the range of entries for a given field.\n" +
+            "'graph <scatter | bar> <field>&<field>' creates a graph for the given fields."
+        );
     }
 }

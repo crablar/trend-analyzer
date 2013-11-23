@@ -1,3 +1,7 @@
+package singleton;
+
+import pojo.*;
+
 import java.util.*;
 
 /**
@@ -7,7 +11,7 @@ import java.util.*;
  */
 public class DataStore {
 
-    static String[] columns = null;
+    public static String[] columns = null;
     static LookUp allEntities = new LookUp();
 
     static void initialize(String[] columnTypes) {
@@ -20,7 +24,7 @@ public class DataStore {
         }
     }
 
-    public static Results getResults(Query query) throws InvalidQueryException{
+    public static Results getResults(Query query) throws InvalidQueryException {
         List<Entity> resultSet = new ArrayList<>();
         Map<Object, List<Entity>> lookup = allEntities.getFieldMappings(query.selectedField);
         for(Map.Entry<Object, List<Entity>> e : lookup.entrySet()){

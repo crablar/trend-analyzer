@@ -1,16 +1,19 @@
-import com.sun.javaws.exceptions.InvalidArgumentException;
+package chart;
 
-import java.io.*;
+import pojo.Field;
+import pojo.Results;
+
+import java.io.File;
+import java.io.FileWriter;
 import java.util.Scanner;
-
 /**
  * User: jeffreymeyerson
- * Date: 11/21/13
- * Time: 9:14 AM
+ * Date: 11/23/13
+ * Time: 8:43 AM
  */
-public class ChartMaker {
+public class ScatterPlotMaker extends ChartMaker{
 
-    public static void scatterPlot(Results results, Field xAxis, Field yAxis) throws Exception{
+    public static void makeChart(Results results, Field xAxis, Field yAxis) throws Exception{
         if(xAxis.isCat() || xAxis.isID() || yAxis.isCat() || yAxis.isID()){
             throw new IllegalArgumentException("Cannot make scatter plot " +
                 "with fields: " + xAxis + ", " + yAxis);
@@ -27,9 +30,14 @@ public class ChartMaker {
         String line;
         while(scan.hasNextLine()){
             line = scan.nextLine();
-            if(line.contains("$F_1_PAIRS")){
-                line = line.replace("$F_1_PAIRS", tupleString.toString());
-                System.out.println(line);
+            if(line.contains("$PAIRS")){
+                line = line.replace("$PAIRS", tupleString.toString());
+            }
+            if(line.contains("$FIELD_1")){
+                line = line.replace("$FIELD_1", xAxis.name);
+            }
+            if(line.contains("$FIELD_2")){
+                line = line.replace("$FIELD_2", yAxis.name);
             }
             fileString.append(line + "\n");
         }
@@ -39,29 +47,6 @@ public class ChartMaker {
         FileWriter fileWriter = new FileWriter(jsPlot);
         fileWriter.write(fileString.toString());
         fileWriter.flush();
-    }
-
-	private static File copyTemplate(String plotName, String templateName) throws IOException{
-		File template = new File(Configuration.projectPath + "visualization/templates/" + templateName + ".html");
-        File scatterPlot = new File(Configuration.projectPath + "visualization/" + templateName + "/" + plotName.toLowerCase() + ".html");
-
-        if(!scatterPlot.exists()){
-            scatterPlot.createNewFile();
-        }
-        InputStream inStream = new FileInputStream(template);
-        OutputStream outStream = new FileOutputStream(scatterPlot);
-
-		byte[] buffer = new byte[1024];
-
-		int length;
-
-		while((length = inStream.read(buffer)) > 0){
-			outStream.write(buffer, 0, length);
-		}
-
-		inStream.close();
-		outStream.close();
-        return scatterPlot;
     }
 
 }
