@@ -51,6 +51,8 @@ public class Utilities {
             "'clear' removes the results of the current session.\n" +
             "'list' displays all available fields you can query on.\n" +
             "'list fields <field name>' lists the range of entries for a given field.\n" +
+             "'<field> <operator> <selection>' loads the results that satisfy the query if no results are" +
+                "\n\t\tloaded, or refines the current results in memory\n" +
             "'chart scatter <cont field>&<cont field>' creates a scatter plot.\n" +
             "'chart bar <cont field>&<id | cat | time field>' creates a bar graph."
         );

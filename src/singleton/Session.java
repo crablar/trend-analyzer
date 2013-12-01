@@ -22,7 +22,6 @@ public class Session {
     static Results results = new Results();
 
     public static void main(String[] args) throws Exception {
-        Configuration.configName = "whitehouse";
         Initializer.init();
         runSession();
     }
@@ -37,11 +36,18 @@ public class Session {
             try {
                 if(!doCommand(input)) {
                     query = QueryUtil.simpleQuery(input);
+                    Results unverifiedResults = new Results(results);
                     if(results.isBlank()){
-                        results = DataStore.getResults(query);
+                        unverifiedResults = DataStore.getResults(query);
                     }
                     else{
-                        results.refine(query);
+                        unverifiedResults.refine(query);
+                    }
+                    if(AnonymityVerifier.assertAnonymity(unverifiedResults)){
+                       results = unverifiedResults;
+                    }
+                    else{
+                        throw new InvalidQueryException("Query reveals sensitive information.");
                     }
                 }
             }

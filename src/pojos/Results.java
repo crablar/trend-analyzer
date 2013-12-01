@@ -3,7 +3,9 @@ package pojos;
 import singleton.Utilities;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * User: jeffreymeyerson
@@ -13,7 +15,7 @@ import java.util.List;
 
 public class Results {
 
-    List<Entity> resultSet;
+    public List<Entity> resultSet;
 
     public Results(List<Entity> resultSet){
         this.resultSet = resultSet;
@@ -23,6 +25,10 @@ public class Results {
         resultSet = new ArrayList<>();
     }
 
+    public Results(Results results) {
+        this.resultSet = new ArrayList<>(results.resultSet);
+    }
+
     public void refine(Query query) throws InvalidQueryException {
         for(Entity entity : resultSet){
             Object entityAttribute = entity.getAttribute(query.selectedField);
@@ -30,16 +36,6 @@ public class Results {
                 resultSet.remove(entity);
             }
         }
-    }
-
-    public String toString(){
-        if(resultSet == null)
-            return null;
-        return Utilities.formatGridToString(Utilities.toStringGrid(resultSet));
-    }
-
-    public boolean isBlank() {
-        return resultSet == null || resultSet.size() == 0;
     }
 
     public String[][] getTuples(Field field1, Field field2) {
@@ -52,4 +48,15 @@ public class Results {
         }
         return result;
     }
+
+    public String toString(){
+        if(resultSet == null)
+            return null;
+        return Utilities.formatGridToString(Utilities.toStringGrid(resultSet));
+    }
+
+    public boolean isBlank() {
+        return resultSet == null || resultSet.size() == 0;
+    }
+
 }

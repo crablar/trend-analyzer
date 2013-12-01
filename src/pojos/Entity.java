@@ -15,12 +15,12 @@ public class Entity {
 
     static int entityCount = 0;
 
-    HashMap<Field, Object> attributes;
+    public HashMap<Field, Object> attributes;
     int entityID;
 
     public Entity(String[] atts) {
         this.entityID = entityCount++;
-        attributes = new HashMap<Field, Object>();
+        attributes = new HashMap<>();
         for(int i = 0; i < DataStore.columns.length; i++){
             Field field = Field.getFieldForString(DataStore.columns[i]);
             Object o = CSVFormatter.cleanEntry(field, atts[i]);
@@ -45,7 +45,7 @@ public class Entity {
      * @return a version of the pojos.Entity with sensitive fields removed.
      */
     public Entity censoredCopy(){
-        HashMap<Field, Object> attCopy = new HashMap<Field, Object>();
+        HashMap<Field, Object> attCopy = new HashMap<>();
         for(Map.Entry<Field, Object> e : attributes.entrySet())
             if(!e.getKey().isSensitive())
                 attCopy.put(e.getKey(), e.getValue());

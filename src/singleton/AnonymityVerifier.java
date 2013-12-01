@@ -1,7 +1,12 @@
 package singleton;
 
+import pojos.Entity;
+import pojos.Field;
 import pojos.InvalidQueryException;
 import pojos.Results;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * User: jeffreymeyerson
@@ -17,8 +22,35 @@ import pojos.Results;
 
 public class AnonymityVerifier {
 
-    public static void assertAnonymity(Results results) throws InvalidQueryException {
-
+    public static boolean assertAnonymity(Results results) throws InvalidQueryException {
+        Map<Field, Map<Object, Integer>> attributeCounts = new HashMap<>();
+        for(Entity entity : results.resultSet){
+            for(Map.Entry<Field, Object> entry : entity.attributes.entrySet()){
+                Field field = entry.getKey();
+                Object attribute = entry.getValue();
+                Map<Object, Integer> attributeCountMap = attributeCounts.get(field);
+                if(attributeCountMap == null){
+                    attributeCountMap = new HashMap<>();
+                    attributeCountMap.put(attribute, 0);
+                    attributeCounts.put(field, attributeCountMap);
+                }
+                Integer count = attributeCountMap.get(attribute);
+                if(count == null){
+                    attributeCounts.get(field).put(attribute, 0);
+                }
+                else{
+                    attributeCounts.get(field).put(attribute, count++);
+                }
+            }
+        }
+        for(Map<Object, Integer> entry : attributeCounts.values()){
+            for(Integer i : entry.values()){
+                if(i < Configuration.k_value){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 }

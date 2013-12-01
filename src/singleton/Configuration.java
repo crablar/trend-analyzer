@@ -10,7 +10,7 @@ import java.util.*;
  * Time: 6:50 PM
  */
 public class Configuration {
-
+    public static String configName = "airsampling";
     public static final String projectPath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/";
     private final static String configPath = "src/config/";
 
@@ -18,7 +18,7 @@ public class Configuration {
     public static Map<String,String> aliases = new HashMap<>();
     public static int numLinesToRead;
     public static String CSVFilePath;
-    public static String configName;
+    public static int k_value;
 
     private static Map<String, String> setupMap = new HashMap<>();
 
@@ -33,6 +33,7 @@ public class Configuration {
         setQueryOperands();
         setCSVFilePath();
         setAliases();
+        setKValue();
     }
 
     private static void setAliases() {
@@ -57,5 +58,10 @@ public class Configuration {
     private static void setCSVFilePath() {
         CSVFilePath = setupMap.get("CSVFilePath");
     }
+
+    private static void setKValue() {
+        k_value = Integer.parseInt(setupMap.get("k-anonymity"));
+    }
+
 
 }
