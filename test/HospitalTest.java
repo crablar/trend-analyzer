@@ -3,10 +3,9 @@ import org.junit.Test;
 import pojos.Logger;
 import pojos.Query;
 import pojos.Results;
-import singleton.Configuration;
-import singleton.DataStore;
-import singleton.Initializer;
-import singleton.QueryUtil;
+import singleton.*;
+
+import static singleton.Configuration.*;
 
 /**
  * User: jeffreymeyerson
@@ -19,7 +18,7 @@ public class HospitalTest {
 
     @Before
     public void setUp() throws Exception{
-        Configuration.configName = "hospital";
+        configName = "hospital";
         if(DataStore.columns == null){
             Initializer.init();
         }
@@ -27,28 +26,28 @@ public class HospitalTest {
     }
 
     @Test
-    public void testCat1() throws Exception{
+    public void testQueryCat1() throws Exception{
         Query query = QueryUtil.simpleQuery("Hospital Name = Southeast Alabama Medical Center");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
     }
 
     @Test
-    public void testCat2() throws Exception{
+    public void testQueryCat2() throws Exception{
         Query query = QueryUtil.simpleQuery("Hospital Name != Southeast Alabama Medical Center");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
     }
 
     @Test
-    public void testCont1() throws Exception{
+    public void testQueryCont() throws Exception{
         Query query = QueryUtil.simpleQuery("Survey Response Rate Percent > 50");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());
     }
 
     @Test
-    public void testCont2() throws Exception{
+    public void testAliasQuery() throws Exception{
         Query query = QueryUtil.simpleQuery("PCNT THE AREA AROUND THEIR ROOM WAS SOMETIMES OR NEVER QUIET AT NIGHT. > 0");
         Results results = DataStore.getResults(query);
         logger.writeResults(results.toString());

@@ -1,3 +1,2 @@
-rm ./src/*.class
-javac ./src/*.java
+javac $(find ./src/* | grep .java)
 java -classpath src singleton.Session

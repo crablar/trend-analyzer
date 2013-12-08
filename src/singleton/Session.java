@@ -1,8 +1,11 @@
 package singleton;
 
+import chart.BarChartMaker;
 import chart.ScatterPlotMaker;
 import pojos.*;
 
+import java.awt.*;
+import java.net.URI;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,15 +23,18 @@ public class Session {
     static boolean finished = false;
     static Logger logger;
     static Results results = new Results();
+    public static boolean anon = false;
 
     public static void main(String[] args) throws Exception {
-        Initializer.init();
         runSession();
     }
 
     public static void runSession() throws Exception {
+        chooseConfig();
+        in.nextLine();
+        Initializer.init();
         logger = new Logger();
-        System.out.println("Welcome to TrendAnalyzer. Type 'commands' for help.\nBrowsing database: " + Configuration.configName);
+        System.out.println("\nWelcome to TrendAnalyzer. Type 'commands' for help.\nBrowsing database: " + Configuration.configName);
         while(!finished){
             System.out.print("Enter query: ");
             String input = in.nextLine().toUpperCase();
@@ -43,7 +49,7 @@ public class Session {
                     else{
                         unverifiedResults.refine(query);
                     }
-                    if(AnonymityVerifier.assertAnonymity(unverifiedResults)){
+                    if(!anon || Anonymity.assertAnonymity(unverifiedResults)){
                        results = unverifiedResults;
                     }
                     else{
@@ -57,6 +63,26 @@ public class Session {
             }
             logger.clearLog();
             logger.writeResults(results.toString());
+        }
+    }
+
+    private static void chooseConfig() {
+        System.out.println("\nChoose a config: whitehouse, hospital, or airsampling");
+        while(true){
+            String choice = in.next();
+            switch(choice.toUpperCase()){
+                case("WHITEHOUSE"):
+                    Configuration.configName = "whitehouse";
+                    return;
+                case("HOSPITAL"):
+                    Configuration.configName = "hospital";
+                    return;
+                case("AIRSAMPLING"):
+                    Configuration.configName = "airsampling";
+                    return;
+                default:
+                    System.out.println(choice + " is not a valid config name. Please try again.");
+            }
         }
     }
 
@@ -75,12 +101,16 @@ public class Session {
                 return true;
             case("CLEAR"):
                 results = new Results();
+                Anonymity.clear();
                 return true;
             case("LIST"):
                 Utilities.printAllFields();
                 return true;
             case("COMMANDS"):
                 Utilities.printCommandDescriptions();
+                return true;
+            case("ANON"):
+                anon = !anon;
                 return true;
             default:
                 return false;
@@ -100,11 +130,17 @@ public class Session {
                 if(results.isBlank()){
                     throw new InvalidQueryException("Can't chart empty result set.");
                 }
+                String chartType = input.split(" ", 3)[2];
                 String fieldStr = input.split(" ", 3)[2];
                 String[] fieldNames = fieldStr.split("&");
                 Field field1 = Field.getFieldForString(fieldNames[0]);
                 Field field2 = Field.getFieldForString(fieldNames[1]) ;
-                ScatterPlotMaker.makeChart(results, field1, field2);
+                if(chartType.equals("scatter")){
+                    ScatterPlotMaker.makeChart(results, field1, field2);
+                }
+                else {
+                    BarChartMaker.makeChart(results, field1, field2);
+                }
                 return true;
             }
             return false;

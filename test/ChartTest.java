@@ -3,7 +3,6 @@ import chart.ScatterPlotMaker;
 import org.junit.Before;
 import org.junit.Test;
 import pojos.Field;
-import pojos.Logger;
 import pojos.Query;
 import pojos.Results;
 import singleton.Configuration;
@@ -17,8 +16,6 @@ import singleton.QueryUtil;
  * Time: 9:20 AM
  */
 public class ChartTest {
-
-    static Logger logger;
 
     @Before
     public void setUp() throws Exception{

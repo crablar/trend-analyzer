@@ -16,10 +16,11 @@ public class Utilities {
         String[][] grid = new String[entities.size() + 1][Field.getAllFields().size() + 1];
         grid[0][0] = "EntityID";
         List<Field> fields = Field.getAllFields();
+
         for(int i = 0; i < fields.size(); i++){
             grid[0][i + 1] = fields.get(i).toString();
         }
-         for(int i = 0; i < entities.size(); i++){
+        for(int i = 0; i < entities.size(); i++){
             Entity entity = entities.get(i);
             grid[i + 1][0] = entity.toString();
             for(int j = 0; j < fields.size(); j++){
@@ -47,14 +48,15 @@ public class Utilities {
 
     public static void printCommandDescriptions() {
         System.out.println(
-            "'print' displays the result set that is currently in memory\n" +
+            "\n'print' displays the result set that is currently in memory\n" +
             "'clear' removes the results of the current session.\n" +
             "'list' displays all available fields you can query on.\n" +
             "'list fields <field name>' lists the range of entries for a given field.\n" +
              "'<field> <operator> <selection>' loads the results that satisfy the query if no results are" +
                 "\n\t\tloaded, or refines the current results in memory\n" +
             "'chart scatter <cont field>&<cont field>' creates a scatter plot.\n" +
-            "'chart bar <cont field>&<id | cat | time field>' creates a bar graph."
+            "'chart bar <cont field>&<id | cat | time field>' creates a bar graph.\n" +
+            "'anon' toggles anonymity. Anonymity is currently " + (Session.anon ? "ENABLED" : "DISABLED") + "\n"
         );
     }
 }

@@ -33,7 +33,7 @@ public class DataStore {
             }
         }
         Results results = new Results(resultSet);
-        AnonymityVerifier.assertAnonymity(results);
+        Anonymity.assertAnonymity(results);
         return results;
     }
 

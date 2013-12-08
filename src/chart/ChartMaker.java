@@ -1,10 +1,8 @@
 package chart;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import singleton.Configuration;
 
 import java.io.*;
-import java.util.Scanner;
 
 /**
  * User: jeffreymeyerson
@@ -14,17 +12,17 @@ import java.util.Scanner;
 public abstract class ChartMaker {
 
 	protected static File copyTemplate(String plotName, String templateName) throws IOException{
-		File template = new File(Configuration.projectPath + "visualization/templates/" + templateName + ".html");
-        File scatterPlot = new File(Configuration.projectPath + "visualization/" + templateName + "/" + plotName.toLowerCase() + ".html");
+
+		File template = new File(Configuration.projectPath + "/visualization/templates/" + templateName + ".html");
+        File scatterPlot = new File(Configuration.projectPath + "/visualization/" + templateName + "/" + plotName.toLowerCase() + ".html");
 
         if(!scatterPlot.exists()){
             scatterPlot.createNewFile();
         }
+
         InputStream inStream = new FileInputStream(template);
         OutputStream outStream = new FileOutputStream(scatterPlot);
-
 		byte[] buffer = new byte[1024];
-
 		int length;
 
 		while((length = inStream.read(buffer)) > 0){

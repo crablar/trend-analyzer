@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Initializer {
 
     public static void init() throws Exception{
+
         Configuration.configure();
         Scanner s = new Scanner(new File(Configuration.CSVFilePath));
         String line = s.nextLine().toUpperCase();
@@ -23,6 +24,7 @@ public class Initializer {
         line = s.nextLine();
         String[] columnTypes = line.split(",");
         DataStore.initialize(columnTypes);
+
         for(int i = 0; i < Configuration.numLinesToRead; i++){
             line = s.nextLine().toUpperCase();
             if(line.endsWith(","))

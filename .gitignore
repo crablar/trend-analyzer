@@ -1,4 +1,5 @@
 *.class
+*.data
 *.iml
 *.swp
 out

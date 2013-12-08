@@ -1,7 +1,6 @@
 package pojos;
 
 /**
- * Created with IntelliJ IDEA.
  * User: jeffreymeyerson
  * Date: 11/2/13
  * Time: 2:22 PM

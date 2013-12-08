@@ -34,7 +34,7 @@ public class Restriction {
                     return rhs.equals(lhs);
                }
                if(operand.equals("!=")){
-                    return rhs.equals(lhs);
+                    return !rhs.equals(lhs);
                }
                 throw new InvalidQueryException("ID comparison with bad operand.");
             }

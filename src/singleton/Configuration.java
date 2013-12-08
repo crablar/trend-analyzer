@@ -10,9 +10,10 @@ import java.util.*;
  * Time: 6:50 PM
  */
 public class Configuration {
-    public static String configName = "airsampling";
-    public static final String projectPath = "/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/";
-    private final static String configPath = "src/config/";
+
+    public static String configName = "hospital";
+    public static final String projectPath = System.getProperty("user.dir");
+    private final static String configPath = "/src/config/";
 
     public static Set<String> queryOperands = new HashSet<>();
     public static Map<String,String> aliases = new HashMap<>();
@@ -62,6 +63,5 @@ public class Configuration {
     private static void setKValue() {
         k_value = Integer.parseInt(setupMap.get("k-anonymity"));
     }
-
 
 }

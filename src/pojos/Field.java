@@ -10,11 +10,11 @@ import java.util.*;
 public class Field {
 
     public enum FieldType{
-        ID,TIME,CAT,CAT_SENSITIVE,CONT,CONT_SENSITIVE;
+        ID,TIME,CAT,CAT_SENSITIVE,CONT,CONT_SENSITIVE
     }
 
-    public static HashMap<Field, FieldType> fieldsToTypes = new HashMap<Field, FieldType>();
-    public static HashMap<String, Field> stringsToFields = new HashMap<String, Field>();
+    public static HashMap<Field, FieldType> fieldsToTypes = new HashMap<>();
+    public static HashMap<String, Field> stringsToFields = new HashMap<>();
 
     public final String name;
     public final FieldType fieldType;
@@ -24,7 +24,7 @@ public class Field {
     }
 
     public static ArrayList<Field> getAllFields(){
-        return new ArrayList<Field>(fieldsToTypes.keySet());
+        return new ArrayList<>(fieldsToTypes.keySet());
     }
 
     public Field(String fieldName, FieldType fieldType) {
