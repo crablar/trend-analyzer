@@ -57,7 +57,7 @@ public class Configuration {
     }
 
     private static void setCSVFilePath() {
-        CSVFilePath = setupMap.get("CSVFilePath");
+        CSVFilePath = projectPath + setupMap.get("CSVFilePath");
     }
 
     private static void setKValue() {

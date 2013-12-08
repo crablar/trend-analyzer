@@ -1,4 +1,4 @@
-CSVFilePath:/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/sample_data/hospital.csv
+CSVFilePath:/src/sample_data/hospital.csv
 numLinesToRead:30
 queryOperands:<,>,=,!=
 k-anonymity:3

@@ -1,4 +1,4 @@
-CSVFilePath:/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/sample_data/airsampling.csv
+CSVFilePath:/src/sample_data/airsampling.csv
 numLinesToRead:30
 queryOperands:<,>,=,!=
 k-anonymity:3

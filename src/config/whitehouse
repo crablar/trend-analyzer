@@ -1,4 +1,4 @@
-CSVFilePath:/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/sample_data/whitehouse.csv
+CSVFilePath:/src/sample_data/whitehouse.csv
 numLinesToRead:30
 queryOperands:<,>,=,!=
 k-anonymity:3

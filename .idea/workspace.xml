@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c0019-956a-40c0-a14f-469739c6cef5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visualization/scatter/latitude_longitude.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visualization/scatter/latitude_result.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visualization/scatter/longitude_result.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visualization/scatter/pcnt their doctors usually communicated well._pcnt their nurses usually communicated well..html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/visualization/scatter/total people_total people.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/singleton/AnonymityVerifier.java" afterPath="$PROJECT_DIR$/src/singleton/Anonymity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/BarChartMaker.java" afterPath="$PROJECT_DIR$/src/chart/BarChartMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ChartMaker.java" afterPath="$PROJECT_DIR$/src/chart/ChartMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ChartTest.java" afterPath="$PROJECT_DIR$/test/ChartTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/Configuration.java" afterPath="$PROJECT_DIR$/src/singleton/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/DataStore.java" afterPath="$PROJECT_DIR$/src/singleton/DataStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Field.java" afterPath="$PROJECT_DIR$/src/pojos/Field.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/HospitalTest.java" afterPath="$PROJECT_DIR$/test/HospitalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/Initializer.java" afterPath="$PROJECT_DIR$/src/singleton/Initializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/InvalidQueryException.java" afterPath="$PROJECT_DIR$/src/pojos/InvalidQueryException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Restriction.java" afterPath="$PROJECT_DIR$/src/pojos/Restriction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Results.java" afterPath="$PROJECT_DIR$/src/pojos/Results.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" afterPath="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/Session.java" afterPath="$PROJECT_DIR$/src/singleton/Session.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/Utilities.java" afterPath="$PROJECT_DIR$/src/singleton/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample_data/hospital.csv" afterPath="$PROJECT_DIR$/src/sample_data/hospital.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output.csv" afterPath="$PROJECT_DIR$/src/output.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trends.sh" afterPath="$PROJECT_DIR$/trends.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample_data/whitehouse.csv" afterPath="$PROJECT_DIR$/src/sample_data/whitehouse.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/airsampling" afterPath="$PROJECT_DIR$/src/config/airsampling" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/hospital" afterPath="$PROJECT_DIR$/src/config/hospital" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/whitehouse" afterPath="$PROJECT_DIR$/src/config/whitehouse" />
     </list>
     <ignored path="TrendAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +33,7 @@
     <file path="/Queries.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384016396269" ignored="false" />
     <file path="/Initializer.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384982894302" ignored="false" />
     <file path="/hospital" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385933042281" ignored="false" />
-    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386177750460" ignored="false" />
+    <file path="/Configuration.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386525821055" ignored="false" />
     <file path="/Utilities.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386184859966" ignored="false" />
     <file path="/ResultEntity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384134234270" ignored="false" />
     <file path="/AnonymityVerifier.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386114005424" ignored="false" />
@@ -74,6 +52,7 @@
     <file path="/whitehouse" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385221788699" ignored="false" />
     <file path="/session_in" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386007128700" ignored="false" />
     <file path="/Anonymity.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386117028405" ignored="false" />
+    <file path="/a.dummy" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386525598549" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,10 +180,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Session.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Session.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singleton/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="47" selection-start="4738" selection-end="4738" vertical-scroll-proportion="0.85804415">
+            <state line="148" column="38" selection-start="5087" selection-end="5087" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVFormatter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/singleton/CSVFormatter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -221,15 +209,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvalidQueryException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pojos/InvalidQueryException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ChartTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ChartTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -242,16 +221,43 @@
       <file leaf-file-name="Initializer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singleton/Initializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="4" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0">
+            <state line="18" column="57" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="airsampling" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/airsampling">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hospital" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/hospital">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configuration.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="133" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+            <state line="59" column="36" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.52554744">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="whitehouse" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/whitehouse">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="104" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -261,15 +267,6 @@
         <entry file="file://$PROJECT_DIR$/src/chart/BarChartMaker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="22" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/singleton/QueryUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -293,22 +290,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/pojos/Restriction.java" />
-        <option value="$PROJECT_DIR$/src/singleton/AnonymityVerifier.java" />
-        <option value="$PROJECT_DIR$/src/chart/ChartMaker.java" />
         <option value="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" />
         <option value="$PROJECT_DIR$/src/pojos/Entity.java" />
         <option value="$PROJECT_DIR$/src/pojos/Field.java" />
         <option value="$PROJECT_DIR$/src/pojos/InvalidQueryException.java" />
         <option value="$PROJECT_DIR$/src/pojos/Results.java" />
         <option value="$PROJECT_DIR$/src/singleton/Anonymity.java" />
-        <option value="$PROJECT_DIR$/src/singleton/Configuration.java" />
         <option value="$PROJECT_DIR$/src/singleton/Initializer.java" />
         <option value="$PROJECT_DIR$/src/singleton/Utilities.java" />
         <option value="$PROJECT_DIR$/test/ChartTest.java" />
         <option value="$PROJECT_DIR$/test/HospitalTest.java" />
         <option value="$PROJECT_DIR$/src/chart/BarChartMaker.java" />
         <option value="$PROJECT_DIR$/src/singleton/Session.java" />
+        <option value="$PROJECT_DIR$/src/config/airsampling" />
+        <option value="$PROJECT_DIR$/src/config/hospital" />
+        <option value="$PROJECT_DIR$/src/config/whitehouse" />
+        <option value="$PROJECT_DIR$/src/singleton/Configuration.java" />
       </list>
     </option>
   </component>
@@ -427,6 +424,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -733,18 +748,18 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.6703125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29787233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44072947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44072947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1902439" sideWeight="0.19756839" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1902439" sideWeight="0.24924012" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29483283" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20081301" sideWeight="0.67173254" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1902439" sideWeight="0.36018237" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1902439" sideWeight="0.45288754" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -818,37 +833,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pojos/Restriction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.28610355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojos/Results.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="1" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.7547684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/singleton/Anonymity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.23433243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pojos/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.34615386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/singleton/CSVFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="-0.5769231">
           <folding />
         </state>
       </provider>
@@ -872,13 +859,6 @@
     <entry file="file://$PROJECT_DIR$/src/pojos/InvalidQueryException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/singleton/Initializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -913,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="133" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chart/BarChartMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="22" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
@@ -929,7 +902,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/singleton/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="47" selection-start="4738" selection-end="4738" vertical-scroll-proportion="0.85804415">
+        <state line="148" column="38" selection-start="5087" selection-end="5087" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singleton/CSVFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singleton/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="57" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/airsampling">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/hospital">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/whitehouse">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="104" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="36" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.52554744">
           <folding />
         </state>
       </provider>
