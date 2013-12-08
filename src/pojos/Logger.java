@@ -1,5 +1,7 @@
 package pojos;
 
+import singleton.Configuration;
+
 import java.io.*;
 
 /**
@@ -9,10 +11,11 @@ import java.io.*;
  */
 public class Logger {
 
-    Writer writer;
-    final static File file = new File ("/Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/src/output.csv");
+    private Writer writer;
+    private static File file;
 
     public Logger() throws IOException {
+        file = new File(Configuration.projectPath + "/src/output.csv");
         if (!file.exists()) {
             file.createNewFile();
         }

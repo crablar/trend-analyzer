@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7c0019-956a-40c0-a14f-469739c6cef5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/singleton/Configuration.java" afterPath="$PROJECT_DIR$/src/singleton/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/airsampling" afterPath="$PROJECT_DIR$/src/config/airsampling" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/hospital" afterPath="$PROJECT_DIR$/src/config/hospital" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/whitehouse" afterPath="$PROJECT_DIR$/src/config/whitehouse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Logger.java" afterPath="$PROJECT_DIR$/src/pojos/Logger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output.csv" afterPath="$PROJECT_DIR$/src/output.csv" />
     </list>
     <ignored path="TrendAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +26,7 @@
     <file path="/Configurator.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1383962651330" ignored="false" />
     <file path="/Session.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386516627769" ignored="false" />
     <file path="/CSVFormatter.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384025602218" ignored="false" />
-    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384867006158" ignored="false" />
+    <file path="/Logger.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1386541068401" ignored="false" />
     <file path="/DataStore.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1385218665704" ignored="false" />
     <file path="/Queries.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384016396269" ignored="false" />
     <file path="/Initializer.java" changelist="6d7c0019-956a-40c0-a14f-469739c6cef5" time="1384982894302" ignored="false" />
@@ -209,11 +207,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChartTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ChartTest.java">
+      <file leaf-file-name="Logger.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pojos/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="13" column="12" selection-start="170" selection-end="170" vertical-scroll-proportion="0.25547445">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,10 +245,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Configuration.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="36" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.52554744">
+            <state line="65" column="29" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -290,7 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/chart/ScatterPlotMaker.java" />
         <option value="$PROJECT_DIR$/src/pojos/Entity.java" />
         <option value="$PROJECT_DIR$/src/pojos/Field.java" />
         <option value="$PROJECT_DIR$/src/pojos/InvalidQueryException.java" />
@@ -306,6 +305,7 @@
         <option value="$PROJECT_DIR$/src/config/hospital" />
         <option value="$PROJECT_DIR$/src/config/whitehouse" />
         <option value="$PROJECT_DIR$/src/singleton/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/pojos/Logger.java" />
       </list>
     </option>
   </component>
@@ -391,20 +391,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="visualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrendAnalyzer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -424,6 +410,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="singleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TrendAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -833,13 +837,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pojos/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.34615386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/singleton/DataStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="15" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.42307693">
@@ -944,8 +941,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/singleton/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="36" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.52554744">
+        <state line="65" column="29" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pojos/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="170" selection-end="170" vertical-scroll-proportion="0.25547445">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
