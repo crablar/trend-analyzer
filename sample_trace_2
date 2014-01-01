@@ -1,0 +1,89 @@
+
+Choose a config: whitehouse, hospital, or airsampling
+
+Welcome to TrendAnalyzer. Type 'commands' for help.
+Browsing database: whitehouse
+Enter query: LIST
+MIDDLE INITIAL (ID)
+RELEASE DATE (TIME)
+MEETING ROOM (CAT)
+CALLER LAST NAME (CAT_SENSITIVE)
+LAST NAME (ID)
+DESCRIPTION (CAT)
+CALLER FIRST NAME (CAT_SENSITIVE)
+APPOINTMENT START DATE (TIME)
+VISITEE FIRSTNAME (CAT_SENSITIVE)
+VISITEE LASTNAME (CAT_SENSITIVE)
+TIME OF ARRIVAL (TIME)
+MEETING LOCATION (CAT)
+TOTAL PEOPLE (CONT)
+FIRST NAME (ID)
+Enter query: LIST FIELDS TIME OF ARRIVAL
+
+NO ENTRY
+10/03/2009 11:42 PM +0000
+10/08/2009 03:47 AM +0000
+10/14/2009 02:12 AM +0000
+09/18/2009 05:24 PM +0000
+10/28/2009 10:27 PM +0000
+09/29/2009 10:19 PM +0000
+09/29/2009 08:37 PM +0000
+Enter query: 
+Choose a config: whitehouse, hospital, or airsampling
+list is not a valid config name. Please try again.
+fields is not a valid config name. Please try again.
+total is not a valid config name. Please try again.
+people is not a valid config name. Please try again.
+
+Choose a config: whitehouse, hospital, or airsampling
+
+Welcome to TrendAnalyzer. Type 'commands' for help.
+Browsing database: whitehouse
+Enter query: LIST
+MIDDLE INITIAL (ID)
+RELEASE DATE (TIME)
+MEETING ROOM (CAT)
+CALLER LAST NAME (CAT_SENSITIVE)
+LAST NAME (ID)
+DESCRIPTION (CAT)
+CALLER FIRST NAME (CAT_SENSITIVE)
+APPOINTMENT START DATE (TIME)
+VISITEE FIRSTNAME (CAT_SENSITIVE)
+VISITEE LASTNAME (CAT_SENSITIVE)
+TIME OF ARRIVAL (TIME)
+MEETING LOCATION (CAT)
+TOTAL PEOPLE (CONT)
+FIRST NAME (ID)
+Enter query: LIST FIELDS TOTAL PEOPLE
+374.0
+3.0
+341.0
+304.0
+1.0
+351.0
+180.0
+285.0
+220.0
+42.0
+6.0
+223.0
+115.0
+58.0
+298.0
+4.0
+1152.0
+197.0
+276.0
+1077.0
+278.0
+350.0
+319.0
+392.0
+1216.0
+89.0
+266.0
+39.0
+Enter query: TOTAL PEOPLE > 100
+Enter query: CHART BAR TOTAL PEOPLE&MEETING LOCATION
+Chart created in /Users/jeffreymeyerson/Documents/workspace/IdeaProjects/TrendAnalyzer/visualization/bar/total people_meeting location.html
+Enter query: 
